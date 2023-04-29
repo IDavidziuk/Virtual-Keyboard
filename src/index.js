@@ -1,5 +1,5 @@
-import './index.html'
-import './style.css'
+import './index.html';
+import './style.css';
 
 const keysArray = {
   Backquote: {
@@ -8,7 +8,7 @@ const keysArray = {
     keyShift: '~',
     keyRus: 'ё',
     keyRusShift: 'Ë',
-    keySpecific: 'switch'
+    keySpecific: 'switch',
   },
   Digit1: {
     keyCode: 49,
@@ -16,7 +16,7 @@ const keysArray = {
     keyShift: '!',
     keyRus: '1',
     keyRusShift: '!',
-    keySpecific: 'switch'
+    keySpecific: 'switch',
   },
   Digit2: {
     keyCode: 50,
@@ -24,7 +24,7 @@ const keysArray = {
     keyShift: '@',
     keyRus: '2',
     keyRusShift: '"',
-    keySpecific: 'switch'
+    keySpecific: 'switch',
   },
   Digit3: {
     keyCode: 51,
@@ -32,7 +32,7 @@ const keysArray = {
     keyShift: '#',
     keyRus: '3',
     keyRusShift: '№',
-    keySpecific: 'switch'
+    keySpecific: 'switch',
   },
   Digit4: {
     keyCode: 52,
@@ -40,7 +40,7 @@ const keysArray = {
     keyShift: '$',
     keyRus: '4',
     keyRusShift: ';',
-    keySpecific: 'switch'
+    keySpecific: 'switch',
   },
   Digit5: {
     keyCode: 53,
@@ -48,7 +48,7 @@ const keysArray = {
     keyShift: '%',
     keyRus: '5',
     keyRusShift: '%',
-    keySpecific: 'switch'
+    keySpecific: 'switch',
   },
   Digit6: {
     keyCode: 54,
@@ -56,7 +56,7 @@ const keysArray = {
     keyShift: '^',
     keyRus: '6',
     keyRusShift: ':',
-    keySpecific: 'switch'
+    keySpecific: 'switch',
   },
   Digit7: {
     keyCode: 55,
@@ -64,7 +64,7 @@ const keysArray = {
     keyShift: '&',
     keyRus: '7',
     keyRusShift: '?',
-    keySpecific: 'switch'
+    keySpecific: 'switch',
   },
   Digit8: {
     keyCode: 56,
@@ -72,7 +72,7 @@ const keysArray = {
     keyShift: '*',
     keyRus: '8',
     keyRusShift: '*',
-    keySpecific: 'switch'
+    keySpecific: 'switch',
   },
   Digit9: {
     keyCode: 57,
@@ -80,7 +80,7 @@ const keysArray = {
     keyShift: '(',
     keyRus: '9',
     keyRusShift: '(',
-    keySpecific: 'switch'
+    keySpecific: 'switch',
   },
   Digit0: {
     keyCode: 48,
@@ -88,7 +88,7 @@ const keysArray = {
     keyShift: ')',
     keyRus: '0',
     keyRusShift: ')',
-    keySpecific: 'switch'
+    keySpecific: 'switch',
   },
   Minus: {
     keyCode: 189,
@@ -96,7 +96,7 @@ const keysArray = {
     keyShift: '_',
     keyRus: '-',
     keyRusShift: '_',
-    keySpecific: 'switch'
+    keySpecific: 'switch',
   },
   Equal: {
     keyCode: 187,
@@ -104,19 +104,19 @@ const keysArray = {
     keyShift: '+',
     keyRus: '=',
     keyRusShift: '+',
-    keySpecific: 'switch'
+    keySpecific: 'switch',
   },
   Backspace: {
     keyCode: 8,
     key: 'delete',
     keyRus: '',
-    keySpecific: 'noswitch'
+    keySpecific: 'noswitch',
   },
   Tab: {
     keyCode: 9,
     key: 'tab',
     keyRus: '',
-    keySpecific: 'noswitch'
+    keySpecific: 'noswitch',
   },
   KeyQ: {
     keyCode: 81,
@@ -124,7 +124,7 @@ const keysArray = {
     keyShift: 'Q',
     keyRus: 'й',
     keyRusShift: 'Й',
-    keySpecific: 'switch'
+    keySpecific: 'switch',
   },
   KeyW: {
     keyCode: 87,
@@ -132,7 +132,7 @@ const keysArray = {
     keyShift: 'W',
     keyRus: 'ц',
     keyRusShift: 'Ц',
-    keySpecific: 'switch'
+    keySpecific: 'switch',
   },
   KeyE: {
     keyCode: 69,
@@ -140,7 +140,7 @@ const keysArray = {
     keyShift: 'E',
     keyRus: 'у',
     keyRusShift: 'У',
-    keySpecific: 'switch'
+    keySpecific: 'switch',
   },
   KeyR: {
     keyCode: 82,
@@ -148,7 +148,7 @@ const keysArray = {
     keyShift: 'R',
     keyRus: 'к',
     keyRusShift: 'К',
-    keySpecific: 'switch'
+    keySpecific: 'switch',
   },
   KeyT: {
     keyCode: 84,
@@ -156,7 +156,7 @@ const keysArray = {
     keyShift: 'T',
     keyRus: 'е',
     keyRusShift: 'Е',
-    keySpecific: 'switch'
+    keySpecific: 'switch',
   },
   KeyY: {
     keyCode: 89,
@@ -164,7 +164,7 @@ const keysArray = {
     keyShift: 'Y',
     keyRus: 'н',
     keyRusShift: 'Н',
-    keySpecific: 'switch'
+    keySpecific: 'switch',
   },
   KeyU: {
     keyCode: 85,
@@ -172,7 +172,7 @@ const keysArray = {
     keyShift: 'U',
     keyRus: 'г',
     keyRusShift: 'Г',
-    keySpecific: 'switch'
+    keySpecific: 'switch',
   },
   KeyI: {
     keyCode: 73,
@@ -180,7 +180,7 @@ const keysArray = {
     keyShift: 'I',
     keyRus: 'ш',
     keyRusShift: 'Ш',
-    keySpecific: 'switch'
+    keySpecific: 'switch',
   },
   KeyO: {
     keyCode: 79,
@@ -188,7 +188,7 @@ const keysArray = {
     keyShift: 'O',
     keyRus: 'щ',
     keyRusShift: 'Щ',
-    keySpecific: 'switch'
+    keySpecific: 'switch',
   },
   KeyP: {
     keyCode: 80,
@@ -196,7 +196,7 @@ const keysArray = {
     keyShift: 'P',
     keyRus: 'з',
     keyRusShift: 'З',
-    keySpecific: 'switch'
+    keySpecific: 'switch',
   },
   BracketLeft: {
     keyCode: 219,
@@ -204,7 +204,7 @@ const keysArray = {
     keyShift: '{',
     keyRus: 'х',
     keyRusShift: 'Х',
-    keySpecific: 'switch'
+    keySpecific: 'switch',
   },
   BracketRight: {
     keyCode: 221,
@@ -212,7 +212,7 @@ const keysArray = {
     keyShift: '}',
     keyRus: 'ъ',
     keyRusShift: 'Ъ',
-    keySpecific: 'switch'
+    keySpecific: 'switch',
   },
   Brackslash: {
     keyCode: 220,
@@ -220,13 +220,13 @@ const keysArray = {
     keyShift: '|',
     keyRus: '\\',
     keyRusShift: '/',
-    keySpecific: 'switch'
+    keySpecific: 'switch',
   },
   CapsLock: {
     keyCode: 20,
     key: 'CapsLock',
     keyRus: '',
-    keySpecific: 'noswitch'
+    keySpecific: 'noswitch',
   },
   KeyA: {
     keyCode: 65,
@@ -234,7 +234,7 @@ const keysArray = {
     keyShift: 'A',
     keyRus: 'ф',
     keyRusShift: 'Ф',
-    keySpecific: 'switch'
+    keySpecific: 'switch',
   },
   KeyS: {
     keyCode: 83,
@@ -242,7 +242,7 @@ const keysArray = {
     keyShift: 'S',
     keyRus: 'ы',
     keyRusShift: 'Ы',
-    keySpecific: 'switch'
+    keySpecific: 'switch',
   },
   KeyD: {
     keyCode: 68,
@@ -250,7 +250,7 @@ const keysArray = {
     keyShift: 'D',
     keyRus: 'в',
     keyRusShift: 'В',
-    keySpecific: 'switch'
+    keySpecific: 'switch',
   },
   KeyF: {
     keyCode: 70,
@@ -258,7 +258,7 @@ const keysArray = {
     keyShift: 'F',
     keyRus: 'а',
     keyRusShift: 'А',
-    keySpecific: 'switch'
+    keySpecific: 'switch',
   },
   KeyG: {
     keyCode: 71,
@@ -266,7 +266,7 @@ const keysArray = {
     keyShift: 'G',
     keyRus: 'п',
     keyRusShift: 'П',
-    keySpecific: 'switch'
+    keySpecific: 'switch',
   },
   KeyH: {
     keyCode: 72,
@@ -274,7 +274,7 @@ const keysArray = {
     keyShift: 'H',
     keyRus: 'р',
     keyRusShift: 'Р',
-    keySpecific: 'switch'
+    keySpecific: 'switch',
   },
   KeyJ: {
     keyCode: 74,
@@ -282,7 +282,7 @@ const keysArray = {
     keyShift: 'J',
     keyRus: 'о',
     keyRusShift: 'О',
-    keySpecific: 'switch'
+    keySpecific: 'switch',
   },
   KeyK: {
     keyCode: 75,
@@ -290,7 +290,7 @@ const keysArray = {
     keyShift: 'K',
     keyRus: 'л',
     keyRusShift: 'Л',
-    keySpecific: 'switch'
+    keySpecific: 'switch',
   },
   KeyL: {
     keyCode: 76,
@@ -298,7 +298,7 @@ const keysArray = {
     keyShift: 'L',
     keyRus: 'д',
     keyRusShift: 'Д',
-    keySpecific: 'switch'
+    keySpecific: 'switch',
   },
   Semicolon: {
     keyCode: 186,
@@ -306,7 +306,7 @@ const keysArray = {
     keyShift: ':',
     keyRus: 'ж',
     keyRusShift: 'Ж',
-    keySpecific: 'switch'
+    keySpecific: 'switch',
   },
   Quote: {
     keyCode: 222,
@@ -314,19 +314,19 @@ const keysArray = {
     keyShift: '"',
     keyRus: 'э',
     keyRusShift: 'Э',
-    keySpecific: 'switch'
+    keySpecific: 'switch',
   },
   Enter: {
     keyCode: 13,
     key: 'Return',
     keyRus: '',
-    keySpecific: 'noswitch'
+    keySpecific: 'noswitch',
   },
   ShiftLeft: {
     keyCode: 16,
     key: 'Shift',
     keyRus: '',
-    keySpecific: 'noswitch'
+    keySpecific: 'noswitch',
   },
   KeyZ: {
     keyCode: 90,
@@ -334,7 +334,7 @@ const keysArray = {
     keyShift: 'Z',
     keyRus: 'я',
     keyRusShift: 'Я',
-    keySpecific: 'switch'
+    keySpecific: 'switch',
   },
   KeyX: {
     keyCode: 88,
@@ -342,7 +342,7 @@ const keysArray = {
     keyShift: 'X',
     keyRus: 'ч',
     keyRusShift: 'Ч',
-    keySpecific: 'switch'
+    keySpecific: 'switch',
   },
   KeyC: {
     keyCode: 67,
@@ -350,7 +350,7 @@ const keysArray = {
     keyShift: 'C',
     keyRus: 'с',
     keyRusShift: 'С',
-    keySpecific: 'switch'
+    keySpecific: 'switch',
   },
   KeyМ: {
     keyCode: 86,
@@ -358,7 +358,7 @@ const keysArray = {
     keyShift: 'V',
     keyRus: 'м',
     keyRusShift: 'М',
-    keySpecific: 'switch'
+    keySpecific: 'switch',
   },
   KeyB: {
     keyCode: 66,
@@ -366,7 +366,7 @@ const keysArray = {
     keyShift: 'B',
     keyRus: 'и',
     keyRusShift: 'И',
-    keySpecific: 'switch'
+    keySpecific: 'switch',
   },
   KeyN: {
     keyCode: 78,
@@ -374,7 +374,7 @@ const keysArray = {
     keyShift: 'N',
     keyRus: 'т',
     keyRusShift: 'Т',
-    keySpecific: 'switch'
+    keySpecific: 'switch',
   },
   KeyM: {
     keyCode: 77,
@@ -382,7 +382,7 @@ const keysArray = {
     keyShift: 'M',
     keyRus: 'ь',
     keyRusShift: 'Ь',
-    keySpecific: 'switch'
+    keySpecific: 'switch',
   },
   Comma: {
     keyCode: 188,
@@ -390,7 +390,7 @@ const keysArray = {
     keyShift: '<',
     keyRus: 'б',
     keyRusShift: 'Б',
-    keySpecific: 'switch'
+    keySpecific: 'switch',
   },
   Period: {
     keyCode: 190,
@@ -398,7 +398,7 @@ const keysArray = {
     keyShift: '>',
     keyRus: 'ю',
     keyRusShift: 'Ю',
-    keySpecific: 'switch'
+    keySpecific: 'switch',
   },
   Slash: {
     keyCode: 191,
@@ -406,130 +406,130 @@ const keysArray = {
     keyShift: '?',
     keyRus: '.',
     keyRusShift: ',',
-    keySpecific: 'switch'
+    keySpecific: 'switch',
   },
   ArrowUp: {
     keyCode: 38,
     key: '▲',
     keyRus: '▲',
-    keySpecific: 'noswitch'
+    keySpecific: 'noswitch',
   },
   ShiftRight: {
     keyCode: 16,
     key: 'Shift',
     keyRus: '',
-    keySpecific: 'noswitch'
+    keySpecific: 'noswitch',
   },
   ControlLeft: {
     keyCode: 17,
     key: 'Control',
     keyRus: '⌃',
-    keySpecific: 'noswitch'
+    keySpecific: 'noswitch',
   },
   AltLeft: {
     keyCode: 18,
     key: 'Option',
     keyRus: '⌥',
-    keySpecific: 'noswitch'
+    keySpecific: 'noswitch',
   },
   MetaLeft: {
     keyCode: 91,
     key: 'Meta',
     keyRus: '⌘',
-    keySpecific: 'noswitch'
+    keySpecific: 'noswitch',
   },
   Space: {
     keyCode: 32,
     key: ' ',
     keyRus: ' ',
-    keySpecific: 'noswitch'
+    keySpecific: 'noswitch',
   },
   MetaRight: {
     keyCode: 93,
     key: 'Meta',
     keyRus: '⌘',
-    keySpecific: 'noswitch'
+    keySpecific: 'noswitch',
   },
   AltRight: {
     keyCode: 18,
     key: 'Option',
     keyRus: '⌥',
-    keySpecific: 'noswitch'
+    keySpecific: 'noswitch',
   },
   ArrowLeft: {
     keyCode: 37,
     key: '◀︎',
     keyRus: '◀︎',
-    keySpecific: 'noswitch'
+    keySpecific: 'noswitch',
   },
   ArrowDown: {
     keyCode: 40,
     key: '▼',
     keyRus: '▼',
-    keySpecific: 'noswitch'
+    keySpecific: 'noswitch',
   },
   ArrowRight: {
     keyCode: 39,
     key: '►',
     keyRus: '►',
-    keySpecific: 'noswitch'
+    keySpecific: 'noswitch',
   },
+};
+
+const body = document.querySelector('body');
+
+function createKeyboard(array) {
+  const oneKey = document.createElement('div');
+  oneKey.classList.add('key-button');
+  let keyItem = '';
+
+  const keys = Object.entries(array);
+  for (let i = 0; i < keys.length; i += 1) {
+    if (keys[i][1].keySpecific === 'switch') {
+      keyItem += `<button class="key-button switch-key" data = ${keys[i][1].keyCode}">${keys[i][1].key}</button>`;
+    } else if (
+      keys[i][0] === 'ArrowDown'
+        || keys[i][0] === 'ArrowRight'
+        || keys[i][0] === 'ArrowUp'
+        || keys[i][0] === 'ArrowLeft'
+    ) {
+      keyItem += `<button class="key-button arrow" data = ${keys[i][1].keyCode}>${keys[i][1].key} </button>`;
+    } else if (keys[i][0] === 'Space') {
+      keyItem += `<button class="key-button noswitch-key space" data = ${keys[i][1].keyCode}>${keys[i][1].key}</button>`;
+    } else {
+      keyItem += `<button class="key-button noswitch-key ${keys[i][1].key}"  data = ${keys[i][1].keyCode}  id="${keys[i][0]}"">${keys[i][1].key}
+      <i class = "add-el">${keys[i][1].keyRus}</i>
+      </button>`;
+    }
+  }
+  document.querySelector('.keyboard').innerHTML = keyItem;
 }
 
-const body = document.querySelector('body')
-
 function createTextareaAndAddition() {
-  const wrapper = document.createElement('div')
-  wrapper.classList.add('wrapper')
+  const wrapper = document.createElement('div');
+  wrapper.classList.add('wrapper');
 
-  const textContent = document.createElement('div')
-  textContent.classList.add('text-content')
+  const textContent = document.createElement('div');
+  textContent.classList.add('text-content');
 
-  const textarea = document.createElement('textarea')
-  textarea.autofocus = true
-  textarea.rows = '10'
-  textarea.cols = '80'
+  const textarea = document.createElement('textarea');
+  textarea.autofocus = true;
+  textarea.rows = '10';
+  textarea.cols = '80';
 
-  const nameOfOS = document.createElement('h1')
-  nameOfOS.innerText = 'For MacBook 2020'
+  const nameOfOS = document.createElement('h1');
+  nameOfOS.innerText = 'For MacBook 2020';
 
-  const addInf = document.createElement('h2')
-  addInf.innerText = "Use 'option' to change languages"
+  const addInf = document.createElement('h2');
+  addInf.innerText = "Use 'option' to change languages";
 
   const keyboard = document.createElement('div');
   keyboard.classList.add('keyboard');
 
-  wrapper.append(textContent, textarea, keyboard)
-  textContent.append(nameOfOS, addInf)
-  body.append(wrapper)
-  createKeyboard(keysArray)
+  wrapper.append(textContent, textarea, keyboard);
+  textContent.append(nameOfOS, addInf);
+  body.append(wrapper);
+  createKeyboard(keysArray);
 }
 
-
-function createKeyboard(array) {
-const oneKey = document.createElement('div');
-oneKey.classList.add('key-button')
-  let keyItem = ''
-  for (let keys in array) {
-if(array[keys]['keySpecific'] === 'switch'){
-    keyItem +=`<button class="key-button switch-key" data = ${array[keys]['keyCode']}">${array[keys]['key']}</button>`
-    
-    
-}
-else if(keys === 'ArrowDown' || keys === 'ArrowRight' || keys === 'ArrowUp' || keys === 'ArrowLeft'){
-    keyItem +=`<button class="key-button arrow" data = ${array[keys]['keyCode']}>${array[keys]['key']} </button>`
-}
-else if(keys === 'Space'){
-    keyItem +=`<button class="key-button noswitch-key space" data = ${array[keys]['keyCode']}>${array[keys]['key']}</button>`
-}
-else  {
-    keyItem +=`<button class="key-button noswitch-key ${array[keys]['key']}"  data = ${array[keys]['keyCode']}  id="${keys}"">${array[keys]['key']}
-    <i class = "add-el">${array[keys]['keyRus']}</i>
-    </button>`
-}
-}
-document.querySelector('.keyboard').innerHTML = keyItem
-}
-
-
-createTextareaAndAddition()
+createTextareaAndAddition();
