@@ -109,13 +109,13 @@ const keysArray = {
   Backspace: {
     keyCode: 8,
     key: 'delete',
-    keyRus: 'delete',
+    keyRus: '',
     keySpecific: 'noswitch'
   },
   Tab: {
     keyCode: 9,
     key: 'tab',
-    keyRus: 'tab',
+    keyRus: '',
     keySpecific: 'noswitch'
   },
   KeyQ: {
@@ -225,7 +225,7 @@ const keysArray = {
   CapsLock: {
     keyCode: 20,
     key: 'CapsLock',
-    keyRus: 'CapsLock',
+    keyRus: '',
     keySpecific: 'noswitch'
   },
   KeyA: {
@@ -319,13 +319,13 @@ const keysArray = {
   Enter: {
     keyCode: 13,
     key: 'Return',
-    keyRus: 'Return',
+    keyRus: '',
     keySpecific: 'noswitch'
   },
   ShiftLeft: {
     keyCode: 16,
     key: 'Shift',
-    keyRus: 'Shift',
+    keyRus: '',
     keySpecific: 'noswitch'
   },
   KeyZ: {
@@ -417,7 +417,7 @@ const keysArray = {
   ShiftRight: {
     keyCode: 16,
     key: 'Shift',
-    keyRus: 'Shift',
+    keyRus: '',
     keySpecific: 'noswitch'
   },
   ControlLeft: {
@@ -462,19 +462,18 @@ const keysArray = {
     keyRus: '◀︎',
     keySpecific: 'noswitch'
   },
- 
+  ArrowDown: {
+    keyCode: 40,
+    key: '▼',
+    keyRus: '▼',
+    keySpecific: 'noswitch'
+  },
   ArrowRight: {
     keyCode: 39,
     key: '►',
     keyRus: '►',
     keySpecific: 'noswitch'
   },
-  ArrowDown: {
-    keyCode: 40,
-    key: '▼',
-    keyRus: '▼',
-    keySpecific: 'noswitch'
-  }
 }
 
 const body = document.querySelector('body')
@@ -495,7 +494,7 @@ function createTextareaAndAddition() {
   nameOfOS.innerText = 'For MacBook 2020'
 
   const addInf = document.createElement('h2')
-  addInf.innerText = "Use 'shift' to change languages"
+  addInf.innerText = "Use 'option' to change languages"
 
   const keyboard = document.createElement('div');
   keyboard.classList.add('keyboard');
@@ -513,17 +512,20 @@ oneKey.classList.add('key-button')
   let keyItem = ''
   for (let keys in array) {
 if(array[keys]['keySpecific'] === 'switch'){
-    keyItem +=`<button class="key-button switch-key">${array[keys]['key']}</button>`
+    keyItem +=`<button class="key-button switch-key" data = ${array[keys]['keyCode']}">${array[keys]['key']}</button>`
+    
     
 }
 else if(keys === 'ArrowDown' || keys === 'ArrowRight' || keys === 'ArrowUp' || keys === 'ArrowLeft'){
-    keyItem +=`<button class="key-button arrow">${array[keys]['key']} </button>`
+    keyItem +=`<button class="key-button arrow" data = ${array[keys]['keyCode']}>${array[keys]['key']} </button>`
 }
 else if(keys === 'Space'){
-    keyItem +=`<button class="key-button noswitch-key space">${array[keys]['key']}</button>`
+    keyItem +=`<button class="key-button noswitch-key space" data = ${array[keys]['keyCode']}>${array[keys]['key']}</button>`
 }
 else  {
-    keyItem +=`<button class="key-button noswitch-key ${array[keys]['key']}" id="${keys}"">${array[keys]['key']}</button>`
+    keyItem +=`<button class="key-button noswitch-key ${array[keys]['key']}"  data = ${array[keys]['keyCode']}  id="${keys}"">${array[keys]['key']}
+    <i class = "add-el">${array[keys]['keyRus']}</i>
+    </button>`
 }
 }
 document.querySelector('.keyboard').innerHTML = keyItem
