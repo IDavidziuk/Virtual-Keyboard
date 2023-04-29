@@ -352,7 +352,7 @@ const keysArray = {
     keyRusShift: 'С',
     keySpecific: 'switch',
   },
-  KeyМ: {
+  KeyV: {
     keyCode: 86,
     key: 'v',
     keyShift: 'V',
@@ -477,27 +477,27 @@ const keysArray = {
 };
 
 const body = document.querySelector('body');
+const keys = Object.entries(keysArray);
 
 function createKeyboard(array) {
   const oneKey = document.createElement('div');
   oneKey.classList.add('key-button');
   let keyItem = '';
 
-  const keys = Object.entries(array);
   for (let i = 0; i < keys.length; i += 1) {
     if (keys[i][1].keySpecific === 'switch') {
-      keyItem += `<button class="key-button switch-key" data = ${keys[i][1].keyCode}">${keys[i][1].key}</button>`;
+      keyItem += `<button class="key-button switch-key" data = ${keys[i][1].keyCode} data-code = ${keys[i][0]}>${keys[i][1].key}</button>`;
     } else if (
       keys[i][0] === 'ArrowDown'
         || keys[i][0] === 'ArrowRight'
         || keys[i][0] === 'ArrowUp'
         || keys[i][0] === 'ArrowLeft'
     ) {
-      keyItem += `<button class="key-button arrow" data = ${keys[i][1].keyCode}>${keys[i][1].key} </button>`;
+      keyItem += `<button class="key-button arrow" data = ${keys[i][1].keyCode} data-code = ${keys[i][0]}>${keys[i][1].key} </button>`;
     } else if (keys[i][0] === 'Space') {
-      keyItem += `<button class="key-button noswitch-key space" data = ${keys[i][1].keyCode}>${keys[i][1].key}</button>`;
+      keyItem += `<button class="key-button noswitch-key space" data = ${keys[i][1].keyCode} data-code = ${keys[i][0]}>${keys[i][1].key}</button>`;
     } else {
-      keyItem += `<button class="key-button noswitch-key ${keys[i][1].key}"  data = ${keys[i][1].keyCode}  id="${keys[i][0]}"">${keys[i][1].key}
+      keyItem += `<button class="key-button noswitch-key ${keys[i][1].key}" data = ${keys[i][1].keyCode} data-code = ${keys[i][0]} id="${keys[i][0]}"">${keys[i][1].key}
       <i class = "add-el">${keys[i][1].keyRus}</i>
       </button>`;
     }
@@ -516,6 +516,7 @@ function createTextareaAndAddition() {
   textarea.autofocus = true;
   textarea.rows = '10';
   textarea.cols = '80';
+  textarea.classList.add('textarea')
 
   const nameOfOS = document.createElement('h1');
   nameOfOS.innerText = 'For MacBook 2020';
@@ -532,4 +533,19 @@ function createTextareaAndAddition() {
   createKeyboard(keysArray);
 }
 
+const textarea = document.querySelector('.textarea');
+const keyButton = document.querySelectorAll('.key-button')
+
+function onKeyDownHandler (event) {
+    document.querySelector(`[data-code = ${event.code}]`).classList.add('active')
+}
+function onKeyUpHandler (event) {
+    document.querySelector(`[data-code = ${event.code}]`).classList.remove('active')
+}
+
 createTextareaAndAddition();
+document.addEventListener('keydown', onKeyDownHandler);
+document.addEventListener('keyup', onKeyUpHandler)
+
+
+
