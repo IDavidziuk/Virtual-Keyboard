@@ -4,7 +4,6 @@
 
 body {
     height: 100vh;
-    padding-top: 30px;
     width: 100%;
     background-color: #f3f3f3;
     font-family: Arial, Helvetica, sans-serif;
@@ -15,6 +14,7 @@ body {
   max-width: 1280px;
   margin: 0 auto;
   display: flex;
+  flex-direction: column;
   justify-content: space-around;
   align-items:center;
 }
@@ -46,4 +46,74 @@ h2{
     margin: 20px;
     font-size: 20px;
     font-weight: 200;
+}
+
+.keyboard {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 40px;
+    margin-bottom: 60px;
+    padding: 30px 40px;
+    background: #dbfff8;
+    width: 900px;
+}
+.key-button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 12px;
+    cursor: pointer;
+    position: relative;
+    min-width: 50px;
+    height: 50px;
+    padding: 5px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.switch-key{
+    font-size: 16px;
+    align-items: center;
+}
+
+.arrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+    
+}
+
+.key-button.noswitch-key {
+    font-weight: 600;
+    width: 60px;
+}
+
+.noswitch-key.space{
+    width: 300px;
+}
+
+.noswitch-key.Shift{
+    width:52px;
+    align-items: center;
+}
+
+#ShiftLeft {
+width: 117px;
+align-items: flex-start;
+}
+
+.noswitch-key.CapsLock{
+    width: 90px;
+}
+
+.noswitch-key.Meta, .noswitch-key.Option,
+.noswitch-key.Control{
+    width: 60px;
+    align-items: center;
+}
+.noswitch-key.Return{
+align-items: flex-end;
+    width:  80px;
 }
