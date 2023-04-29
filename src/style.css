@@ -55,12 +55,18 @@ h2{
     margin-top: 40px;
     margin-bottom: 60px;
     padding: 30px 40px;
-    background: #dbfff8;
+    background: #e5eae9;
     width: 900px;
+    border-radius: 20px;
+    box-shadow: 8px 5px 15px rgba(138, 138, 138, 0.4);
 }
 .key-button {
-    display: flex;
-    flex-direction: column;
+    outline: none;
+    border: none;
+    background-color: #3b5550;
+    color: #ffffff;
+    display: inline-flex;
+    align-items: center;
     justify-content: center;
     font-size: 12px;
     cursor: pointer;
@@ -69,7 +75,13 @@ h2{
     height: 50px;
     padding: 5px;
     text-align: center;
-    vertical-align: middle;
+    vertical-align: top;
+    box-shadow: 0px 2px 5px #4f4f4f;
+}
+
+.key-button:hover, 
+.key-button:active {
+    background-color: #1f3528;
 }
 
 .switch-key{
@@ -81,7 +93,6 @@ h2{
     display: flex;
     align-items: center;
     justify-content: center;
-   
     
 }
 
@@ -101,19 +112,38 @@ h2{
 
 #ShiftLeft {
 width: 117px;
-align-items: flex-start;
 }
 
 .noswitch-key.CapsLock{
     width: 90px;
 }
 
+.CapsLock::after {
+    content: '';
+    top: 8px;
+    left: 8px;
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    background: #e5eae9;
+    border-radius: 50%;
+}
+.CapsLock.active::after {
+    background: #80ffe6;
+}
+
 .noswitch-key.Meta, .noswitch-key.Option,
 .noswitch-key.Control{
     width: 60px;
-    align-items: center;
+    align-items: flex-end;
+    padding-bottom: 15px;
 }
 .noswitch-key.Return{
-align-items: flex-end;
     width:  80px;
+}
+
+.add-el {
+    position: absolute;
+    top: 5px;
+    right: 10px;
 }
