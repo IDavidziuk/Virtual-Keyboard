@@ -434,7 +434,7 @@ const keysArray = {
   },
   MetaLeft: {
     keyCode: 91,
-    key: 'Meta',
+    key: 'Command',
     keyRus: '⌘',
     keySpecific: 'noswitch',
   },
@@ -446,7 +446,7 @@ const keysArray = {
   },
   MetaRight: {
     keyCode: 93,
-    key: 'Meta',
+    key: 'Command',
     keyRus: '⌘',
     keySpecific: 'noswitch',
   },
@@ -486,7 +486,9 @@ function createKeyboard(array) {
 
   for (let i = 0; i < keys.length; i += 1) {
     if (keys[i][1].keySpecific === 'switch') {
-      keyItem += `<button class="key-button switch-key" data = ${keys[i][1].keyCode} data-code = ${keys[i][0]}>${keys[i][1].key}</button>`;
+      keyItem += `<button class="key-button switch-key" data = ${keys[i][1].keyCode} data-code = ${keys[i][0]}>${keys[i][1].key}
+      <i class = "switch-el">${keys[i][1].keyShift}</i>
+      </button>`;
     } else if (
       keys[i][0] === 'ArrowDown'
         || keys[i][0] === 'ArrowRight'
@@ -530,20 +532,30 @@ function createTextareaAndAddition() {
   wrapper.append(textContent, textarea, keyboard);
   textContent.append(nameOfOS, addInf);
   body.append(wrapper);
-  createKeyboard(keysArray);
+ 
 }
 
 const textarea = document.querySelector('.textarea');
 const keyButton = document.querySelectorAll('.key-button')
 
+function activeCapsBtn (){
+    if (document.querySelector(`.key-button[data-code = CapsLock]`).classList.contains('active')){
+
+    }
+}
+
 function onKeyDownHandler (event) {
+    document.querySelector('.textarea').focus()
     document.querySelector(`[data-code = ${event.code}]`).classList.add('active')
 }
 function onKeyUpHandler (event) {
     document.querySelector(`[data-code = ${event.code}]`).classList.remove('active')
 }
 
+
+
 createTextareaAndAddition();
+createKeyboard(keysArray);
 document.addEventListener('keydown', onKeyDownHandler);
 document.addEventListener('keyup', onKeyUpHandler)
 

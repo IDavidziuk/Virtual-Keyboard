@@ -89,7 +89,9 @@ h2 {
 
 .switch-key {
   font-size: 16px;
-  align-items: center;
+  align-items: flex-end;
+  padding-bottom: 10px;
+  padding-left: 20px;
 }
 
 .arrow {
@@ -104,12 +106,17 @@ h2 {
 }
 
 .noswitch-key.space {
-  width: 300px;
+  width: 280px;
 }
 
 .noswitch-key.Shift {
   width: 52px;
   align-items: center;
+}
+.switch-el {
+  position: absolute;
+  top: 6px;
+  left: 10px
 }
 
 #ShiftLeft {
@@ -133,11 +140,13 @@ h2 {
 .CapsLock.active::after {
   background: #80ffe6;
 }
+.noswitch-key.Command{
+  width: 70px;
+}
 
-.noswitch-key.Meta,
+.noswitch-key.Command,
 .noswitch-key.Option,
 .noswitch-key.Control {
-  width: 60px;
   align-items: flex-end;
   padding-bottom: 15px;
 }
