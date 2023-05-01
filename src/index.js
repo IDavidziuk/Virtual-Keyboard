@@ -93,60 +93,55 @@ function onKeyUpHandler(event) {
   }
 
 function onKeyDownMouseHandler(event) {
+    if(event.currentTarget !== document.querySelector('[data-code = CapsLock]')){
     event.currentTarget.classList.add('active')
-  }
-function onKeyUpMouseHandler(event) {
-    if(event.currentTarget !== document.querySelector('[data-code = CapsLock]'))
-    event.currentTarget.classList.remove('active')
-    
 }
+    else{
+        event.currentTarget.classList.toggle('active')
+    }
+    }
 
+function onKeyUpMouseHandler(event) {
+    if(event.currentTarget !== document.querySelector('[data-code = CapsLock]')){
+    event.currentTarget.classList.remove('active')
+}
+}
 
 
 document.addEventListener('keydown', onKeyDownHandler)
 document.addEventListener('keyup', onKeyUpHandler)
 keyButton.forEach((element) => element.addEventListener('mousedown', onKeyDownMouseHandler))
 keyButton.forEach((element) => element.addEventListener('mouseup', onKeyUpMouseHandler))
- keyButton.forEach((element) => element.addEventListener('mouseout', onKeyUpMouseHandler))
+
+
+
 
 function specialButton(event) {
   textarea.focus()
  
-  if (
-    event.code === 'Tab' ||
-    event.currentTarget === document.querySelector('[data-code= Tab]')
+  if (event.currentTarget === document.querySelector('[data-code= Tab]')
   ) {
     textarea.value += '    '
   }
-  if (
-    event.code === 'Backspace' ||
-    event.currentTarget === document.querySelector('[data-code = Backspace]')
+  if (event.currentTarget === document.querySelector('[data-code = Backspace]')
   ) {
     textarea.value = textarea.value.slice(0, textarea.selectionStart-1) + textarea.value.slice(textarea.selectionStart);
     textarea.selectionEnd=textarea.selectionStart-1;
   }
-  if (
-    event.code === 'Enter' ||
-    event.currentTarget === document.querySelector('[data-code = Enter]')
+  if (event.currentTarget === document.querySelector('[data-code = Enter]')
   ) {
     textarea.value += '\n'
   }
-  if (
-    event.code === 'Space' ||
-    event.currentTarget === document.querySelector('[data-code = Space]')
+  if (event.currentTarget === document.querySelector('[data-code = Space]')
   ) {
     textarea.value += ' '
   }
-  if (
-    event.code === 'ArrowLeft' ||
-    event.currentTarget === document.querySelector('[data-code = ArrowLeft]')
+  if (event.currentTarget === document.querySelector('[data-code = ArrowLeft]')
   ) {
     textarea.selectionStart = textarea.selectionStart - 1
     textarea.selectionEnd = textarea.selectionEnd - 1
   }
-  if (
-    event.code === 'ArrowRight' ||
-    event.currentTarget === document.querySelector('[data-code = ArrowRight]')
+  if (event.currentTarget === document.querySelector('[data-code = ArrowRight]')
   ) {
     textarea.selectionStart = textarea.selectionStart + 1
     
@@ -154,7 +149,7 @@ function specialButton(event) {
 
 if (event.currentTarget !== document.querySelector('[data-code = Space]') && 
      event.currentTarget !== document.querySelector('[data-code = Enter]') && 
-     event.currentTarget !== document.querySelector('[data-code = Backspace]') && 
+     event.currentTarget !== document.querySelector('[data-code = Backspace]') &&
      event.currentTarget !== document.querySelector('[data-code= Tab]')){
  textarea.value += event.currentTarget.innerText
      }
