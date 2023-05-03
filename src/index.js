@@ -4,18 +4,12 @@ import { keysArrayEng, keysArrayRu } from './keyboard-content'
 
 const body = document.querySelector('body')
 
-// function changeLeng() {
-//     if (!localStorage.getItem('lang')) {
-//         localStorage.setItem('lang', 'en');
-//       }
-// }
-
+let keyItem = ''
 //создание клавиатуры
 function createKeyboard(array) {
   const keyElement = document.createElement('button')
   keyElement.classList.add('key-button')
   keyElement.setAttribute('type', 'button')
-  let keyItem = ''
 
   array.forEach(function (el) {
     let keys = Object.values(el)
@@ -60,20 +54,27 @@ function createTextareaAndAddition() {
   const keyboard = document.createElement('div')
   keyboard.classList.add('keyboard')
 
-  //this.elements.keysContainer.appendChild(this.createKeyboard)
-
   wrapper.append(textContent, textarea, keyboard)
   textContent.append(nameOfOS, addInf)
   body.append(wrapper)
-
-  //   if (localStorage.getItem('lang') === 'en') {
-  //     createKeyboard(keysArrayEng)
-  //   } else {
-  //     createKeyboard(keysArrayRu)
-  //   }
 }
 createTextareaAndAddition()
-createKeyboard(keysArrayEng)
+
+if (!localStorage.getItem('lang')) {
+  localStorage.setItem('lang', 'en')
+}
+const langCurr = localStorage.getItem('lang')
+if (langCurr === 'en') {
+  createKeyboard(keysArrayEng)
+} else {
+  createKeyboard(keysArrayRu)
+}
+
+// let keys
+
+// arr.forEach(function (el) {
+//   keys = Object.values(el)
+// })
 
 const textarea = document.querySelector('.textarea')
 const keyButton = document.querySelectorAll('.key-button')
@@ -87,6 +88,9 @@ function onKeyUpHandler(event) {
     .classList.remove('active')
 }
 
+document.addEventListener('keydown', onKeyDownHandler)
+document.addEventListener('keyup', onKeyUpHandler)
+
 function onKeyDownMouseHandler(event) {
   if (
     event.currentTarget !== document.querySelector('[data-code = CapsLock]')
@@ -97,7 +101,7 @@ function onKeyDownMouseHandler(event) {
   }
 }
 
-function onKeyUpMouseHandler(event) {
+function onKeyUpMouseHandler(event, keys) {
   if (
     event.currentTarget !== document.querySelector('[data-code = CapsLock]')
   ) {
@@ -105,8 +109,6 @@ function onKeyUpMouseHandler(event) {
   }
 }
 
-document.addEventListener('keydown', onKeyDownHandler)
-document.addEventListener('keyup', onKeyUpHandler)
 keyButton.forEach((element) =>
   element.addEventListener('mousedown', onKeyDownMouseHandler)
 )
@@ -146,23 +148,32 @@ function specialButton(event) {
     textarea.selectionStart = textarea.selectionStart + 1
   }
   if (
-    document
-      .querySelector('[data-code = CapsLock]')
-      .classList.contains('active')
+    event.currentTarget === document.querySelector('[data-code = CapsLock]')
   ) {
-    textarea.value += event.currentTarget.innerText.toUpperCase()
+    const letters = document.querySelectorAll('.switch')
+    letters.forEach((elem) => {
+      document
+        .querySelector('[data-code = CapsLock]')
+        .classList.contains('active')
+        ? (elem.innerText = elem.innerText.toUpperCase())
+        : (elem.innerText = elem.innerText.toLowerCase())
+    })
   }
   if (
-    event.currentTarget == document.querySelector('[data-code = CapsLock]') ||
-    event.currentTarget == document.querySelector('[data-code = ShiftRight]') ||
-    event.currentTarget == document.querySelector('[data-code = ShiftLeft]') ||
-    event.currentTarget == document.querySelector('[data-code = Enter]')
+    event.currentTarget === document.querySelector('[data-code = MetaLeft]') ||
+    event.currentTarget === document.querySelector('[data-code = MetaRight]')
   ) {
-    textarea.value = ''
+    if (localStorage.getItem('lang') === 'en') {
+      localStorage.setItem('lang', 'ru')
+    }
+  } else {
+    localStorage.setItem('lang', 'en')
   }
-  //   else {
-  //     textarea.value += event.currentTarget.innerText
-  //   }
+
+  if (event.target.classList.contains('switch')) {
+    keyItem = event.target.innerText
+    textarea.value += keyItem
+  }
 }
 
 keyButton.forEach((element) => element.addEventListener('click', specialButton))

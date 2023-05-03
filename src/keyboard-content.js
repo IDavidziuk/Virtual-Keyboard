@@ -80,12 +80,12 @@ export const keysArrayEng = [
   {
     code: 'Backspace',
     keyCode: 8,
-    key: 'delete'
+    key: 'Delete'
   },
   {
     code: 'Tab',
     keyCode: 9,
-    key: 'tab'
+    key: 'Tab'
   },
   {
     code: 'KeyQ',
@@ -410,8 +410,6 @@ export const keysArrayRu = [
     code: 'Digit7',
     keyCode: 55,
     key: '7',
-    keyShift: '&',
-    key: '7',
     keyRusShift: '?'
   },
   {
@@ -447,9 +445,9 @@ export const keysArrayRu = [
   {
     code: 'Backspace',
     keyCode: 8,
-    key: 'delete'
+    key: 'Delete'
   },
-  { code: 'Tab', keyCode: 9, key: 'tab' },
+  { code: 'Tab', keyCode: 9, key: 'Tab' },
   {
     code: 'KeyQ',
     keyCode: 81,
