@@ -10,326 +10,419 @@
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "keysArrayEng": () => (/* binding */ keysArrayEng)
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-const keysArrayEng = [{
+const keysArray = [{
   code: 'Backquote',
   keyCode: 192,
   key: '`',
-  keyShift: '~'
+  keyShift: '~',
+  keyRu: 'ё',
+  keyRusShift: 'Ë'
 }, {
   code: 'Digit1',
   keyCode: 49,
   key: '1',
-  keyShift: '!'
+  keyShift: '!',
+  keyRu: '1',
+  keyRusShift: '!'
 }, {
   code: 'Digit2',
   keyCode: 50,
   key: '2',
-  keyShift: '@'
+  keyShift: '@',
+  keyRu: '2',
+  keyRusShift: '"'
 }, {
   code: 'Digit3',
   keyCode: 51,
   key: '3',
-  keyShift: '#'
+  keyShift: '#',
+  keyRu: '3',
+  keyRusShift: '№'
 }, {
   code: 'Digit4',
   keyCode: 52,
   key: '4',
-  keyShift: '$'
+  keyShift: '$',
+  keyRu: '4',
+  keyRusShift: ';'
 }, {
   code: 'Digit5',
   keyCode: 53,
-  key: '4',
-  keyShift: '%'
+  key: '5',
+  keyShift: '%',
+  keyRu: '5',
+  keyRusShift: '%'
 }, {
   code: 'Digit6',
   keyCode: 54,
   key: '6',
-  keyShift: '^'
+  keyShift: '^',
+  keyRu: '6',
+  keyRusShift: ':'
 }, {
   code: 'Digit7',
   keyCode: 55,
   key: '7',
-  keyShift: '&'
+  keyShift: '&',
+  keyRu: '7',
+  keyRusShift: '?'
 }, {
   code: 'Digit8',
   keyCode: 56,
   key: '8',
-  keyShift: '*'
+  keyShift: '*',
+  keyRu: '8',
+  keyRusShift: '*'
 }, {
   code: 'Digit9',
   keyCode: 57,
   key: '9',
-  keyShift: '('
+  keyShift: '(',
+  keyRu: '9',
+  keyRusShift: '('
 }, {
   code: 'Digit0',
   keyCode: 48,
   key: '0',
-  keyShift: ')'
+  keyShift: ')',
+  keyRu: '0',
+  keyRusShift: ')'
 }, {
   code: 'Minus',
   keyCode: 189,
   key: '-',
-  keyShift: '_'
+  keyShift: '_',
+  keyRu: '-',
+  keyRusShift: '_'
 }, {
   code: 'Equal',
   keyCode: 187,
   key: '=',
-  keyShift: '+'
+  keyShift: '+',
+  keyRu: '=',
+  keyRusShift: '+'
 }, {
   code: 'Backspace',
   keyCode: 8,
-  key: 'delete'
+  key: 'Delete',
+  keyRu: 'Delete'
 }, {
   code: 'Tab',
   keyCode: 9,
-  key: 'tab'
+  key: 'Tab',
+  keyRu: 'Tab'
 }, {
   code: 'KeyQ',
   keyCode: 81,
   key: 'q',
-  keyShift: 'Q'
+  keyShift: 'Q',
+  keyRu: 'й',
+  keyRusShift: 'Й'
 }, {
   code: 'KeyW',
   keyCode: 87,
   key: 'w',
-  keyShift: 'W'
+  keyShift: 'W',
+  keyRu: 'ц',
+  keyRusShift: 'Ц'
 }, {
   code: 'KeyE',
   keyCode: 69,
   key: 'e',
-  keyShift: 'E'
+  keyShift: 'E',
+  keyRu: 'у',
+  keyRusShift: 'У'
 }, {
   code: 'KeyR',
   keyCode: 82,
   key: 'r',
-  keyShift: 'R'
+  keyShift: 'R',
+  keyRu: 'к',
+  keyRusShift: 'К'
 }, {
   code: 'KeyT',
   keyCode: 84,
   key: 't',
-  keyShift: 'T'
+  keyShift: 'T',
+  keyRu: 'е',
+  keyRusShift: 'Е'
 }, {
   code: 'KeyY',
   keyCode: 89,
   key: 'y',
-  keyShift: 'Y'
+  keyShift: 'Y',
+  keyRu: 'н',
+  keyRusShift: 'Н'
 }, {
   code: 'KeyU',
   keyCode: 85,
   key: 'u',
-  keyShift: 'U'
+  keyShift: 'U',
+  keyRu: 'г',
+  keyRusShift: 'Г'
 }, {
   code: 'KeyI',
   keyCode: 73,
   key: 'i',
-  keyShift: 'I'
+  keyShift: 'I',
+  keyRu: 'ш',
+  keyRusShift: 'Ш'
 }, {
   code: 'KeyO',
   keyCode: 79,
   key: 'o',
-  keyShift: 'O'
+  keyShift: 'O',
+  keyRu: 'щ',
+  keyRusShift: 'Щ'
 }, {
   code: 'KeyP',
   keyCode: 80,
   key: 'p',
-  keyShift: 'P'
+  keyShift: 'P',
+  keyRu: 'з',
+  keyRusShift: 'З'
 }, {
   code: 'BracketLeft',
   keyCode: 219,
   key: '[',
-  keyShift: '{'
+  keyShift: '{',
+  keyRu: 'х',
+  keyRusShift: 'Х'
 }, {
   code: 'BracketRight',
   keyCode: 221,
   key: ']',
-  keyShift: '}'
+  keyShift: '}',
+  keyRu: '(',
+  keyRusShift: ')'
 }, {
   code: 'Brackslash',
   keyCode: 220,
   key: '\\',
-  keyShift: '|'
+  keyShift: '|',
+  keyRu: '\\',
+  keyRusShift: '/'
 }, {
   code: 'CapsLock',
   keyCode: 20,
-  key: 'CapsLock'
+  key: 'CapsLock',
+  keyRu: 'CapsLock'
 }, {
   code: 'KeyA',
   keyCode: 65,
   key: 'a',
-  keyShift: 'A'
+  keyShift: 'A',
+  keyRu: 'ф',
+  keyRusShift: 'Ф'
 }, {
   code: 'KeyS',
   keyCode: 83,
   key: 's',
-  keyShift: 'S'
+  keyShift: 'S',
+  keyRu: 'ы',
+  keyRusShift: 'Ы'
 }, {
   code: 'KeyD',
   keyCode: 68,
   key: 'd',
-  keyShift: 'D'
+  keyShift: 'D',
+  keyRu: 'в',
+  keyRusShift: 'В'
 }, {
   code: 'KeyF',
   keyCode: 70,
   key: 'f',
-  keyShift: 'F'
+  keyShift: 'F',
+  keyRu: 'а',
+  keyRusShift: 'А'
 }, {
   code: 'KeyG',
   keyCode: 71,
   key: 'g',
-  keyShift: 'G'
+  keyShift: 'G',
+  keyRu: 'п',
+  keyRusShift: 'П'
 }, {
   code: 'KeyH',
   keyCode: 72,
   key: 'h',
-  keyShift: 'H'
+  keyShift: 'H',
+  keyRu: 'р',
+  keyRusShift: 'Р'
 }, {
   code: 'KeyJ',
   keyCode: 74,
   key: 'j',
-  keyShift: 'J'
+  keyShift: 'J',
+  keyRu: 'о',
+  keyRusShift: 'О'
 }, {
   code: 'KeyK',
   keyCode: 75,
   key: 'k',
-  keyShift: 'K'
+  keyShift: 'K',
+  keyRu: 'л',
+  keyRusShift: 'Л'
 }, {
   code: 'KeyL',
   keyCode: 76,
   key: 'l',
-  keyShift: 'L'
+  keyShift: 'L',
+  keyRu: 'д',
+  keyRusShift: 'Д'
 }, {
   code: 'Semicolon',
   keyCode: 186,
   key: ';',
-  keyShift: ':'
+  keyShift: ':',
+  keyRu: 'ж',
+  keyRusShift: 'Ж'
 }, {
   code: 'Quote',
   keyCode: 222,
   key: "'",
-  keyShift: '"'
+  keyShift: '"',
+  keyRu: 'э',
+  keyRusShift: 'Э'
 }, {
   code: 'Enter',
   keyCode: 13,
-  key: 'Return'
+  key: 'Return',
+  keyRu: 'Return'
 }, {
   code: 'ShiftLeft',
   keyCode: 16,
-  key: 'Shift'
+  key: 'Shift',
+  keyRu: 'Shift'
 }, {
   code: 'KeyZ',
   keyCode: 90,
   key: 'z',
-  keyShift: 'Z'
+  keyShift: 'Z',
+  keyRu: 'я',
+  keyRusShift: 'Я'
 }, {
   code: 'KeyX',
   keyCode: 88,
   key: 'x',
-  keyShift: 'X'
+  keyShift: 'X',
+  keyRu: 'ч',
+  keyRusShift: 'Ч'
 }, {
   code: 'KeyC',
   keyCode: 67,
   key: 'c',
-  keyShift: 'C'
+  keyShift: 'C',
+  keyRu: 'с',
+  keyRusShift: 'С'
 }, {
   code: 'KeyV',
   keyCode: 86,
   key: 'v',
-  keyShift: 'V'
+  keyShift: 'V',
+  keyRu: 'м',
+  keyRusShift: 'М'
 }, {
   code: 'KeyB',
   keyCode: 66,
   key: 'b',
-  keyShift: 'B'
+  keyShift: 'B',
+  keyRu: 'и',
+  keyRusShift: 'И'
 }, {
   code: 'KeyN',
   keyCode: 78,
   key: 'n',
-  keyShift: 'N'
+  keyShift: 'N',
+  keyRu: 'т',
+  keyRusShift: 'Т'
 }, {
   code: 'KeyM',
   keyCode: 77,
   key: 'm',
-  keyShift: 'M'
+  keyShift: 'M',
+  keyRu: 'ь',
+  keyRusShift: 'Ь'
 }, {
   code: 'Comma',
   keyCode: 188,
   key: ',',
-  keyShift: '<'
+  keyShift: '<',
+  keyRu: 'б',
+  keyRusShift: 'Б'
 }, {
   code: 'Period',
   keyCode: 190,
   key: '.',
-  keyShift: '>'
+  keyShift: '>',
+  keyRu: 'ю',
+  keyRusShift: 'Ю'
 }, {
   code: 'Slash',
   keyCode: 191,
   key: '/',
-  keyShift: '?'
+  keyShift: '?',
+  keyRu: '.',
+  keyRusShift: ','
 }, {
   code: 'ArrowUp',
   keyCode: 38,
-  key: '▲'
+  key: '▲',
+  keyRu: '▲'
 }, {
   code: 'ShiftRight',
   keyCode: 16,
-  key: 'Shift'
+  key: 'Shift',
+  keyRu: 'Shift'
 }, {
   code: 'ControlLeft',
   keyCode: 17,
   key: 'Control',
-  keyRus: '⌃',
-  keySpecific: 'noswitch'
+  keyRu: 'Control'
 }, {
   code: 'AltLeft',
   keyCode: 18,
   key: 'Option',
-  keyRus: '⌥',
-  keySpecific: 'noswitch'
+  keyRu: 'Option'
 }, {
   code: 'MetaLeft',
   keyCode: 91,
   key: 'Command',
-  keyRus: '⌘',
-  keySpecific: 'noswitch'
+  keyRu: 'Command'
 }, {
   code: 'Space',
   keyCode: 32,
   key: ' ',
-  keyRus: ' ',
-  keySpecific: 'noswitch'
+  keyRu: ' '
 }, {
   code: 'MetaRight',
   keyCode: 93,
   key: 'Command',
-  keyRus: '⌘',
-  keySpecific: 'noswitch'
+  keyRu: 'Command'
 }, {
   code: 'AltRight',
   keyCode: 18,
   key: 'Option',
-  keyRus: '⌥',
-  keySpecific: 'noswitch'
+  keyRu: 'Option'
 }, {
   code: 'ArrowLeft',
   keyCode: 37,
   key: '◀︎',
-  keyRus: '',
-  keySpecific: 'noswitch'
+  keyRu: '◀︎'
 }, {
   code: 'ArrowDown',
   keyCode: 40,
   key: '▼',
-  keyRus: '',
-  keySpecific: 'noswitch'
+  keyRu: '▼'
 }, {
   code: 'ArrowRight',
   keyCode: 39,
   key: '►',
-  keyRus: '',
-  keySpecific: 'noswitch'
+  keyRu: '►'
 }];
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (keysArray);
 
 /***/ }),
 
@@ -352,7 +445,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "* {\n  box-sizing: border-box;\n}\n\nbody {\n  height: 100vh;\n  width: 100%;\n  background-color: #f3f3f3;\n  font-family: Arial, Helvetica, sans-serif;\n  font-weight: 400;\n}\n\n.wrapper {\n  max-width: 1280px;\n  margin: 0 auto;\n  display: flex;\n  flex-direction: column;\n  justify-content: space-around;\n  align-items: center;\n}\n\ntextarea {\n  border: 1px solid rgb(1, 49, 40);\n  color: rgb(4, 11, 10);\n}\n\ntextarea:focus {\n  border: 1px solid rgb(8, 148, 122);\n  outline: none;\n  box-shadow: 2px 2px 4px rgba(86, 86, 86, 0.5);\n}\n\n.text-content {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n}\n\nh1 {\n  margin-top: 30px;\n  margin-bottom: 0;\n  font-size: 30px;\n}\n\nh2 {\n  margin: 20px;\n  font-size: 20px;\n  font-weight: 200;\n}\n\n.keyboard {\n  display: flex;\n  flex-wrap: wrap;\n  gap: 8px;\n  margin-top: 40px;\n  margin-bottom: 60px;\n  padding: 30px 40px;\n  background: #e5eae9;\n  width: 900px;\n  border-radius: 20px;\n  box-shadow: 8px 5px 15px rgba(138, 138, 138, 0.4);\n}\n\n.key-button {\n  outline: none;\n  border: none;\n  background-color: #3b5550;\n  color: #ffffff;\n  display: inline-flex;\n  align-items: center;\n  justify-content: center;\n  font-size: 12px;\n  cursor: pointer;\n  position: relative;\n  min-width: 50px;\n  height: 50px;\n  padding: 5px;\n  text-align: center;\n  vertical-align: top;\n  box-shadow: 0px 2px 5px #4f4f4f;\n  transition: all 0.4s ease-out;\n}\n\n.key-button:hover {\n  background-color: #1f3528;\n}\n\n.key-button.active {\n  background-color: #1f3528;\n}\n\n.switch-key {\n  font-size: 16px;\n  align-items: flex-end;\n  padding-bottom: 10px;\n  padding-left: 20px;\n}\n\n.arrow {\n  display: flex;\n  align-items: center;\n  justify-content: center;\n}\n\n.key-button.noswitch-key {\n  font-weight: 600;\n  width: 60px;\n}\n\n.noswitch-key.space {\n  width: 280px;\n}\n\n.noswitch-key.Shift {\n  width: 52px;\n  align-items: center;\n}\n\n.switch-el {\n  position: absolute;\n  top: 6px;\n  left: 10px;\n}\n\n#ShiftLeft {\n  width: 117px;\n}\n\n.noswitch-key.CapsLock {\n  width: 90px;\n}\n\n.CapsLock::after {\n  content: \"\";\n  top: 8px;\n  left: 8px;\n  position: absolute;\n  width: 5px;\n  height: 5px;\n  background: #e5eae9;\n  border-radius: 50%;\n}\n\n.CapsLock.active::after {\n  background: #80ffe6;\n}\n\n.noswitch-key.Command {\n  width: 70px;\n}\n\n.noswitch-key.Command,\n.noswitch-key.Option,\n.noswitch-key.Control {\n  align-items: flex-end;\n  padding-bottom: 15px;\n}\n\n.noswitch-key.Return {\n  width: 80px;\n}\n\n.add-el {\n  position: absolute;\n  top: 5px;\n  right: 10px;\n}", "",{"version":3,"sources":["webpack://./src/style.css"],"names":[],"mappings":"AAAA;EACE,sBAAA;AACF;;AAEA;EACE,aAAA;EACA,WAAA;EACA,yBAAA;EACA,yCAAA;EACA,gBAAA;AACF;;AAEA;EACE,iBAAA;EACA,cAAA;EACA,aAAA;EACA,sBAAA;EACA,6BAAA;EACA,mBAAA;AACF;;AAEA;EACE,gCAAA;EACA,qBAAA;AACF;;AAEA;EACE,kCAAA;EACA,aAAA;EACA,6CAAA;AACF;;AAEA;EACE,aAAA;EACA,sBAAA;EACA,mBAAA;AACF;;AAEA;EACE,gBAAA;EACA,gBAAA;EACA,eAAA;AACF;;AAEA;EACE,YAAA;EACA,eAAA;EACA,gBAAA;AACF;;AAEA;EACE,aAAA;EACA,eAAA;EACA,QAAA;EACA,gBAAA;EACA,mBAAA;EACA,kBAAA;EACA,mBAAA;EACA,YAAA;EACA,mBAAA;EACA,iDAAA;AACF;;AACA;EACE,aAAA;EACA,YAAA;EACA,yBAAA;EACA,cAAA;EACA,oBAAA;EACA,mBAAA;EACA,uBAAA;EACA,eAAA;EACA,eAAA;EACA,kBAAA;EACA,eAAA;EACA,YAAA;EACA,YAAA;EACA,kBAAA;EACA,mBAAA;EACA,+BAAA;EACA,6BAAA;AAEF;;AACA;EACE,yBAAA;AAEF;;AACA;EACI,yBAAA;AAEJ;;AACA;EACE,eAAA;EACA,qBAAA;EACA,oBAAA;EACA,kBAAA;AAEF;;AACA;EACE,aAAA;EACA,mBAAA;EACA,uBAAA;AAEF;;AACA;EACE,gBAAA;EACA,WAAA;AAEF;;AACA;EACE,YAAA;AAEF;;AACA;EACE,WAAA;EACA,mBAAA;AAEF;;AAAA;EACE,kBAAA;EACA,QAAA;EACA,UAAA;AAGF;;AAAA;EACE,YAAA;AAGF;;AAAA;EACE,WAAA;AAGF;;AAAA;EACE,WAAA;EACA,QAAA;EACA,SAAA;EACA,kBAAA;EACA,UAAA;EACA,WAAA;EACA,mBAAA;EACA,kBAAA;AAGF;;AADA;EACE,mBAAA;AAIF;;AAFA;EACE,WAAA;AAKF;;AAFA;;;EAGE,qBAAA;EACA,oBAAA;AAKF;;AAHA;EACE,WAAA;AAMF;;AAHA;EACE,kBAAA;EACA,QAAA;EACA,WAAA;AAMF","sourcesContent":["* {\n  box-sizing: border-box;\n}\n\nbody {\n  height: 100vh;\n  width: 100%;\n  background-color: #f3f3f3;\n  font-family: Arial, Helvetica, sans-serif;\n  font-weight: 400;\n}\n\n.wrapper {\n  max-width: 1280px;\n  margin: 0 auto;\n  display: flex;\n  flex-direction: column;\n  justify-content: space-around;\n  align-items: center;\n}\n\ntextarea {\n  border: 1px solid rgb(1, 49, 40);\n  color: rgb(4, 11, 10);\n}\n\ntextarea:focus {\n  border: 1px solid rgb(8, 148, 122);\n  outline: none;\n  box-shadow: 2px 2px 4px rgba(86, 86, 86, 0.5);\n}\n\n.text-content {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n}\n\nh1 {\n  margin-top: 30px;\n  margin-bottom: 0;\n  font-size: 30px;\n}\n\nh2 {\n  margin: 20px;\n  font-size: 20px;\n  font-weight: 200;\n}\n\n.keyboard {\n  display: flex;\n  flex-wrap: wrap;\n  gap: 8px;\n  margin-top: 40px;\n  margin-bottom: 60px;\n  padding: 30px 40px;\n  background: #e5eae9;\n  width: 900px;\n  border-radius: 20px;\n  box-shadow: 8px 5px 15px rgba(138, 138, 138, 0.4);\n}\n.key-button {\n  outline: none;\n  border: none;\n  background-color: #3b5550;\n  color: #ffffff;\n  display: inline-flex;\n  align-items: center;\n  justify-content: center;\n  font-size: 12px;\n  cursor: pointer;\n  position: relative;\n  min-width: 50px;\n  height: 50px;\n  padding: 5px;\n  text-align: center;\n  vertical-align: top;\n  box-shadow: 0px 2px 5px #4f4f4f;\n  transition: all .4s ease-out;\n}\n\n.key-button:hover {\n  background-color: #1f3528;\n}\n\n.key-button.active {\n    background-color: #1f3528;\n}\n\n.switch-key {\n  font-size: 16px;\n  align-items: flex-end;\n  padding-bottom: 10px;\n  padding-left: 20px;\n}\n\n.arrow {\n  display: flex;\n  align-items: center;\n  justify-content: center;\n}\n\n.key-button.noswitch-key {\n  font-weight: 600;\n  width: 60px;\n}\n\n.noswitch-key.space {\n  width: 280px;\n}\n\n.noswitch-key.Shift {\n  width: 52px;\n  align-items: center;\n}\n.switch-el {\n  position: absolute;\n  top: 6px;\n  left: 10px\n}\n\n#ShiftLeft {\n  width: 117px;\n}\n\n.noswitch-key.CapsLock {\n  width: 90px;\n}\n\n.CapsLock::after {\n  content: '';\n  top: 8px;\n  left: 8px;\n  position: absolute;\n  width: 5px;\n  height: 5px;\n  background: #e5eae9;\n  border-radius: 50%;\n}\n.CapsLock.active::after {\n  background: #80ffe6;\n}\n.noswitch-key.Command{\n  width: 70px;\n}\n\n.noswitch-key.Command,\n.noswitch-key.Option,\n.noswitch-key.Control {\n  align-items: flex-end;\n  padding-bottom: 15px;\n}\n.noswitch-key.Return {\n  width: 80px;\n}\n\n.add-el {\n  position: absolute;\n  top: 5px;\n  right: 10px;\n}\n"],"sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.id, "* {\n  box-sizing: border-box;\n}\n\nbody {\n  height: 100vh;\n  width: 100%;\n  background-color: #f3f3f3;\n  font-family: Arial, Helvetica, sans-serif;\n  font-weight: 400;\n}\n\n.wrapper {\n  max-width: 1280px;\n  margin: 0 auto;\n  display: flex;\n  flex-direction: column;\n  justify-content: space-around;\n  align-items: center;\n}\n\ntextarea {\n  width: 500px;\n  height: 150px;\n  border: 1px solid rgb(1, 49, 40);\n  color: rgb(4, 11, 10);\n}\n\ntextarea:focus {\n  border: 1px solid rgb(8, 148, 122);\n  outline: none;\n  box-shadow: 2px 2px 4px rgba(86, 86, 86, 0.5);\n}\n\n.text-content {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n}\n\nh1 {\n  margin-top: 30px;\n  margin-bottom: 0;\n  font-size: 30px;\n}\n\nh2 {\n  margin: 20px;\n  font-size: 20px;\n  font-weight: 200;\n}\n\n.keyboard {\n  display: flex;\n  flex-wrap: wrap;\n  gap: 8px;\n  margin-top: 40px;\n  margin-bottom: 60px;\n  padding: 30px 40px;\n  background: #e5eae9;\n  width: 900px;\n  border-radius: 20px;\n  box-shadow: 8px 5px 15px rgba(138, 138, 138, 0.4);\n}\n\n.key-button {\n  font-weight: 600;\n  font-size: 11px;\n  outline: none;\n  border: none;\n  background-color: #3b5550;\n  color: #ffffff;\n  display: inline-flex;\n  align-items: center;\n  justify-content: center;\n  cursor: pointer;\n  position: relative;\n  min-width: 60px;\n  height: 50px;\n  padding: 0;\n  text-align: center;\n  vertical-align: top;\n  box-shadow: 0px 2px 5px #4f4f4f;\n  transition: all 0.4s ease-out;\n}\n\n.key-button:hover {\n  background-color: #1f3528;\n}\n\n.key-button.active {\n  background-color: #1f3528;\n}\n\n.key-button.arrow {\n  min-width: 50px;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n}\n\n.key-button.switch {\n  font-size: 14px;\n  font-weight: 400;\n  min-width: 50px;\n}\n\n.key-button.space {\n  min-width: 250px;\n}\n\n.key-button.control {\n  min-width: 70px;\n}\n\n.key-button.shift {\n  min-width: 52px;\n  align-items: center;\n}\n\n/* .switch-el {\n  position: absolute;\n  top: 6px;\n  left: 10px;\n} */\n#shiftleft {\n  width: 118px;\n}\n\n.key-button.capslock {\n  width: 90px;\n}\n\n.capslock::after {\n  content: \"\";\n  top: 8px;\n  left: 8px;\n  position: absolute;\n  width: 5px;\n  height: 5px;\n  background: #e5eae9;\n  border-radius: 50%;\n}\n\n.capslock.active::after {\n  background: #80ffe6;\n}\n\n.key-button.command {\n  width: 81px;\n}\n\n.key-button.return {\n  width: 80px;\n}", "",{"version":3,"sources":["webpack://./src/style.css"],"names":[],"mappings":"AAAA;EACE,sBAAA;AACF;;AAEA;EACE,aAAA;EACA,WAAA;EACA,yBAAA;EACA,yCAAA;EACA,gBAAA;AACF;;AAEA;EACE,iBAAA;EACA,cAAA;EACA,aAAA;EACA,sBAAA;EACA,6BAAA;EACA,mBAAA;AACF;;AAEA;EACE,YAAA;EACA,aAAA;EACA,gCAAA;EACA,qBAAA;AACF;;AAEA;EACE,kCAAA;EACA,aAAA;EACA,6CAAA;AACF;;AAEA;EACE,aAAA;EACA,sBAAA;EACA,mBAAA;AACF;;AAEA;EACE,gBAAA;EACA,gBAAA;EACA,eAAA;AACF;;AAEA;EACE,YAAA;EACA,eAAA;EACA,gBAAA;AACF;;AAEA;EACE,aAAA;EACA,eAAA;EACA,QAAA;EACA,gBAAA;EACA,mBAAA;EACA,kBAAA;EACA,mBAAA;EACA,YAAA;EACA,mBAAA;EACA,iDAAA;AACF;;AACA;EACE,gBAAA;EACA,eAAA;EACA,aAAA;EACA,YAAA;EACA,yBAAA;EACA,cAAA;EACA,oBAAA;EACA,mBAAA;EACA,uBAAA;EACA,eAAA;EACA,kBAAA;EACA,eAAA;EACA,YAAA;EACA,UAAA;EACA,kBAAA;EACA,mBAAA;EACA,+BAAA;EACA,6BAAA;AAEF;;AACA;EACE,yBAAA;AAEF;;AACA;EACE,yBAAA;AAEF;;AACA;EACE,eAAA;EACA,aAAA;EACA,mBAAA;EACA,uBAAA;AAEF;;AACA;EACE,eAAA;EACA,gBAAA;EACA,eAAA;AAEF;;AACA;EACE,gBAAA;AAEF;;AAAA;EACE,eAAA;AAGF;;AADA;EACE,eAAA;EACA,mBAAA;AAIF;;AAFA;;;;GAAA;AAMA;EACE,YAAA;AAIF;;AADA;EACE,WAAA;AAIF;;AADA;EACE,WAAA;EACA,QAAA;EACA,SAAA;EACA,kBAAA;EACA,UAAA;EACA,WAAA;EACA,mBAAA;EACA,kBAAA;AAIF;;AAFA;EACE,mBAAA;AAKF;;AAHA;EACE,WAAA;AAMF;;AAHA;EACE,WAAA;AAMF","sourcesContent":["* {\n  box-sizing: border-box;\n}\n\nbody {\n  height: 100vh;\n  width: 100%;\n  background-color: #f3f3f3;\n  font-family: Arial, Helvetica, sans-serif;\n  font-weight: 400;\n}\n\n.wrapper {\n  max-width: 1280px;\n  margin: 0 auto;\n  display: flex;\n  flex-direction: column;\n  justify-content: space-around;\n  align-items: center;\n}\n\ntextarea {\n  width: 500px;\n  height: 150px;\n  border: 1px solid rgb(1, 49, 40);\n  color: rgb(4, 11, 10);\n}\n\ntextarea:focus {\n  border: 1px solid rgb(8, 148, 122);\n  outline: none;\n  box-shadow: 2px 2px 4px rgba(86, 86, 86, 0.5);\n}\n\n.text-content {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n}\n\nh1 {\n  margin-top: 30px;\n  margin-bottom: 0;\n  font-size: 30px;\n}\n\nh2 {\n  margin: 20px;\n  font-size: 20px;\n  font-weight: 200;\n}\n\n.keyboard {\n  display: flex;\n  flex-wrap: wrap;\n  gap: 8px;\n  margin-top: 40px;\n  margin-bottom: 60px;\n  padding: 30px 40px;\n  background: #e5eae9;\n  width: 900px;\n  border-radius: 20px;\n  box-shadow: 8px 5px 15px rgba(138, 138, 138, 0.4);\n}\n.key-button {\n  font-weight: 600;\n  font-size: 11px;\n  outline: none;\n  border: none;\n  background-color: #3b5550;\n  color: #ffffff;\n  display: inline-flex;\n  align-items: center;\n  justify-content: center;\n  cursor: pointer;\n  position: relative;\n  min-width: 60px;\n  height: 50px;\n  padding: 0;\n  text-align: center;\n  vertical-align: top;\n  box-shadow: 0px 2px 5px #4f4f4f;\n  transition: all 0.4s ease-out;\n}\n\n.key-button:hover {\n  background-color: #1f3528;\n}\n\n.key-button.active {\n  background-color: #1f3528;\n}\n\n.key-button.arrow {\n  min-width: 50px;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n}\n\n.key-button.switch {\n  font-size: 14px;\n  font-weight: 400;\n  min-width: 50px;\n}\n\n.key-button.space {\n  min-width: 250px;\n}\n.key-button.control {\n  min-width: 70px;\n}\n.key-button.shift {\n  min-width: 52px;\n  align-items: center;\n}\n/* .switch-el {\n  position: absolute;\n  top: 6px;\n  left: 10px;\n} */\n\n#shiftleft {\n  width: 118px;\n}\n\n.key-button.capslock {\n  width: 90px;\n}\n\n.capslock::after {\n  content: '';\n  top: 8px;\n  left: 8px;\n  position: absolute;\n  width: 5px;\n  height: 5px;\n  background: #e5eae9;\n  border-radius: 50%;\n}\n.capslock.active::after {\n  background: #80ffe6;\n}\n.key-button.command {\n  width: 81px;\n}\n\n.key-button.return {\n  width: 80px;\n}\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -865,7 +958,7 @@ module.exports = styleTagTransform;
   \**********************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-module.exports = __webpack_require__.p + "244e426d2f109c89ed3a.js";
+module.exports = __webpack_require__.p + "5e9a6b6d3c7571f4f8fa.js";
 
 /***/ }),
 
@@ -1030,41 +1123,23 @@ __webpack_require__.r(__webpack_exports__);
 
 
 const body = document.querySelector('body');
-let languageCurr = localStorage.getItem('keyboard-lang') || 'en';
-
-// function changeLeng () {
-//     if(localStorage.languageCurr === 'ru') {
-//         localStorage.setItem('keyboard-lang', 'en')
-//     }
-// }
-
-function takeKays() {
-  let key;
-  _keyboard_content__WEBPACK_IMPORTED_MODULE_2__.keysArrayEng.forEach(function (el) {
-    key = Object.entries(el);
-  });
-  return key;
-}
-let oneKey = takeKays();
-
-//создание клавиатуры
+let keyItem = '';
+let langEng = true;
+// создание клавиатуры
 function createKeyboard(array) {
-  const oneKey = document.createElement('div');
-  oneKey.classList.add('key-button');
-  let keyItem = '';
-  array.forEach(function (el) {
-    let key = Object.entries(el);
-    if (key.length === 4 && languageCurr === 'en') {
-      keyItem += `<button class="key-button switch-key" data = ${key[1][1]} data-code = ${key[0][1]}>${key[2][1]}</button>`;
-    } else if (key.length === 7 && languageCurr === 'ru') {
-      keyItem += `<button class="key-button switch-key" data = ${key[1][1]} data-code = ${key[0][1]}>${key[2][1]}
-      </button>`;
-    } else if (key[0][1] === 'ArrowDown' || key[0][1] === 'ArrowRight' || key[0][1] === 'ArrowUp' || key[0][1] === 'ArrowLeft') {
-      keyItem += `<button class="key-button arrow" data = ${key[1][1]} data-code = ${key[0][1]}>${key[2][1]} </button>`;
-    } else if (key[0][1] === 'Space') {
-      keyItem += `<button class="key-button noswitch-key space" data = ${key[1][1]} data-code = ${key[0][1]}>${key[2][1]}</button>`;
+  keyItem = '';
+  const keyElement = document.createElement('button');
+  keyElement.classList.add('key-button');
+  keyElement.setAttribute('type', 'button');
+  array.forEach(el => {
+    if (el.keyRusShift) {
+      keyItem += `<button class="key-button switch" data = ${el.keyCode} data-code = ${el.code}  id = ${el.code.toLowerCase()}>${el.key} </button>`;
+    } else if (el.code === 'ArrowDown' || el.code === 'ArrowRight' || el.code === 'ArrowUp' || el.code === 'ArrowLeft') {
+      keyItem += `<button class="key-button arrow" data = ${el.keyCode} data-code = ${el.code} id = ${el.code.toLowerCase()}>${el.key} </button>`;
+    } else if (el.code === 'Space') {
+      keyItem += `<button class="key-button space" data = ${el.keyCode} data-code = ${el.code} id = ${el.code.toLowerCase()}>${el.key}</button>`;
     } else {
-      keyItem += `<button class="key-button noswitch-key ${key[2][1]}" data = ${key[1][1]} data-code = ${key[0][1]} id = ${key[0][1]}>${key[2][1]}
+      keyItem += `<button class="key-button  ${el.key.toLowerCase()}" data = ${el.keyCode} data-code = ${el.code} id = ${el.code.toLowerCase()}>${el.key}
       </button>`;
     }
   });
@@ -1077,8 +1152,6 @@ function createTextareaAndAddition() {
   textContent.classList.add('text-content');
   const textarea = document.createElement('textarea');
   textarea.autofocus = true;
-  textarea.rows = '10';
-  textarea.cols = '80';
   textarea.classList.add('textarea');
   const nameOfOS = document.createElement('h1');
   nameOfOS.innerText = 'For MacBook 2020';
@@ -1091,56 +1164,130 @@ function createTextareaAndAddition() {
   body.append(wrapper);
 }
 createTextareaAndAddition();
-createKeyboard(_keyboard_content__WEBPACK_IMPORTED_MODULE_2__.keysArrayEng);
+createKeyboard(_keyboard_content__WEBPACK_IMPORTED_MODULE_2__["default"]);
 const textarea = document.querySelector('.textarea');
-const keyButton = document.querySelectorAll('.key-button');
+const changeLang = function () {
+  let en = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : true;
+  let ruKey;
+  const keyButton = document.querySelectorAll('.key-button');
+  keyButton.forEach(elem => {
+    const el = elem;
+    ruKey = _keyboard_content__WEBPACK_IMPORTED_MODULE_2__["default"].find(item => item.code.toLowerCase() === el.id);
+    if (ruKey.keyRu) {
+      if (en) {
+        el.innerHTML = ruKey.key;
+      } else {
+        el.innerHTML = ruKey.keyRu;
+      }
+    }
+  });
+};
 function onKeyDownHandler(event) {
-  document.querySelector(`[data-code = ${event.code}]`).classList.add('active');
+  if (event.code !== 'CapsLock') {
+    document.querySelector(`[data-code = ${event.code}]`).add('active');
+  } else {
+    document.querySelector(`[data-code = ${event.code}]`).classList.toggle('active');
+  }
+  if (event.code === 'CapsLock') {
+    const letters = document.querySelectorAll('.switch');
+    letters.forEach(elem => {
+      const el = elem;
+      if (document.querySelector('[data-code = CapsLock]').classList.contains('active')) {
+        el.innerText = el.innerText.toUpperCase();
+      } else {
+        el.innerText = el.innerText.toLowerCase();
+      }
+    });
+  }
+  const oneElement = document.getElementById(event.code.toLowerCase());
+  console.log(oneElement);
+  if (oneElement.classList.contains('switch') || event.code === 'ArrowUp' || event.code === 'ArrowDown') {
+    keyItem = event.key;
+    textarea.innerText += keyItem;
+  }
+  if (event.code === 'MetaLeft') {
+    langEng = !langEng;
+    if (langEng) {
+      localStorage.setItem('lang', 'en');
+    } else {
+      localStorage.setItem('lang', 'ru');
+    }
+    changeLang(langEng);
+  }
 }
 function onKeyUpHandler(event) {
   document.querySelector(`[data-code = ${event.code}]`).classList.remove('active');
 }
+body.addEventListener('keydown', onKeyDownHandler);
+body.addEventListener('keyup', onKeyUpHandler);
 function onKeyDownMouseHandler(event) {
-  event.currentTarget.classList.add('active');
+  if (event.target !== document.querySelector('[data-code = CapsLock]')) {
+    event.target.classList.add('active');
+  } else {
+    event.target.classList.toggle('active');
+  }
 }
 function onKeyUpMouseHandler(event) {
-  if (event.currentTarget !== document.querySelector('[data-code = CapsLock]')) event.currentTarget.classList.remove('active');
+  if (event.target !== document.querySelector('[data-code = CapsLock]')) {
+    event.target.classList.remove('active');
+  }
 }
-document.addEventListener('keydown', onKeyDownHandler);
-document.addEventListener('keyup', onKeyUpHandler);
+const keyButton = document.querySelectorAll('.key-button');
 keyButton.forEach(element => element.addEventListener('mousedown', onKeyDownMouseHandler));
 keyButton.forEach(element => element.addEventListener('mouseup', onKeyUpMouseHandler));
-keyButton.forEach(element => element.addEventListener('mouseout', onKeyUpMouseHandler));
+if (localStorage.getItem('lang') === 'ru') {
+  langEng = false;
+  changeLang(langEng);
+}
 function specialButton(event) {
   textarea.focus();
-  if (event.code === 'Tab' || event.currentTarget === document.querySelector('[data-code= Tab]')) {
+  if (event.target === document.querySelector('[data-code= Tab]')) {
     textarea.value += '    ';
   }
-  if (event.code === 'Backspace' || event.currentTarget === document.querySelector('[data-code = Backspace]')) {
-    textarea.value = textarea.value.slice(0, textarea.selectionStart - 1) + textarea.value.slice(textarea.selectionStart);
-    textarea.selectionEnd = textarea.selectionStart - 1;
+  if (event.target === document.querySelector('[data-code = Backspace]')) {
+    textarea.value = textarea.value.substring(0, textarea.selectionStart - 1) + textarea.value.substring(textarea.selectionStart);
+    textarea.selectionEnd = textarea.selectionStart + 1;
   }
-  if (event.code === 'Enter' || event.currentTarget === document.querySelector('[data-code = Enter]')) {
+  if (event.target === document.querySelector('[data-code = Enter]')) {
     textarea.value += '\n';
   }
-  if (event.code === 'Space' || event.currentTarget === document.querySelector('[data-code = Space]')) {
+  if (event.target === document.querySelector('[data-code = Space]')) {
     textarea.value += ' ';
   }
-  if (event.code === 'ArrowLeft' || event.currentTarget === document.querySelector('[data-code = ArrowLeft]')) {
-    textarea.selectionStart = textarea.selectionStart - 1;
-    textarea.selectionEnd = textarea.selectionEnd - 1;
+  if (event.target === document.querySelector('[data-code = ArrowLeft]')) {
+    textarea.selectionStart -= 1;
+    textarea.selectionEnd -= 1;
   }
-  if (event.code === 'ArrowRight' || event.currentTarget === document.querySelector('[data-code = ArrowRight]')) {
-    textarea.selectionStart = textarea.selectionStart + 1;
+  if (event.target === document.querySelector('[data-code = ArrowRight]')) {
+    textarea.selectionStart += 1;
   }
-  if (event.currentTarget !== document.querySelector('[data-code = Space]') && event.currentTarget !== document.querySelector('[data-code = Enter]') && event.currentTarget !== document.querySelector('[data-code = Backspace]') && event.currentTarget !== document.querySelector('[data-code= Tab]')) {
-    textarea.value += event.currentTarget.innerText;
+  if (event.target === document.querySelector('[data-code = CapsLock]')) {
+    const letters = document.querySelectorAll('.switch');
+    letters.forEach(elem => {
+      const el = elem;
+      const capsLock = document.querySelector('[data-code = CapsLock]');
+      if (capsLock.classList.contains('active')) {
+        el.innerText = el.innerText.toUpperCase();
+      } else {
+        el.innerText = el.innerText.toLowerCase();
+      }
+    });
+  }
+  if (event.target.classList.contains('switch') || event.target === document.querySelector('[data-code = ArrowUp]') || event.target === document.querySelector('[data-code = ArrowDown]')) {
+    keyItem = event.target.innerText;
+    textarea.value += keyItem;
+  }
+  if (event.target === document.querySelector('[data-code = MetaLeft]')) {
+    langEng = !langEng;
+    if (langEng) {
+      localStorage.setItem('lang', 'en');
+    } else {
+      localStorage.setItem('lang', 'ru');
+    }
+    changeLang(langEng);
   }
 }
 keyButton.forEach(element => element.addEventListener('click', specialButton));
-// keyButton.forEach((element) => element.addEventListener('keydown', specialButton))
-
-alert('Привет. я не доконца еще доделала работу, буду благодарна, если посмотришь в четверг! Заранее спасибо!');
 })();
 
 /******/ })()
