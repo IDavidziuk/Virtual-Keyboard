@@ -1,11 +1,11 @@
-export const keysArray = [
+const keysArray = [
   {
     code: 'Backquote',
     keyCode: 192,
     key: '`',
     keyShift: '~',
     keyRu: 'ё',
-    keyRusShift: 'Ë'
+    keyRusShift: 'Ë',
   },
   {
     code: 'Digit1',
@@ -13,7 +13,7 @@ export const keysArray = [
     key: '1',
     keyShift: '!',
     keyRu: '1',
-    keyRusShift: '!'
+    keyRusShift: '!',
   },
   {
     code: 'Digit2',
@@ -21,7 +21,7 @@ export const keysArray = [
     key: '2',
     keyShift: '@',
     keyRu: '2',
-    keyRusShift: '"'
+    keyRusShift: '"',
   },
   {
     code: 'Digit3',
@@ -29,7 +29,7 @@ export const keysArray = [
     key: '3',
     keyShift: '#',
     keyRu: '3',
-    keyRusShift: '№'
+    keyRusShift: '№',
   },
   {
     code: 'Digit4',
@@ -37,7 +37,7 @@ export const keysArray = [
     key: '4',
     keyShift: '$',
     keyRu: '4',
-    keyRusShift: ';'
+    keyRusShift: ';',
   },
   {
     code: 'Digit5',
@@ -45,7 +45,7 @@ export const keysArray = [
     key: '5',
     keyShift: '%',
     keyRu: '5',
-    keyRusShift: '%'
+    keyRusShift: '%',
   },
   {
     code: 'Digit6',
@@ -53,7 +53,7 @@ export const keysArray = [
     key: '6',
     keyShift: '^',
     keyRu: '6',
-    keyRusShift: ':'
+    keyRusShift: ':',
   },
   {
     code: 'Digit7',
@@ -61,15 +61,15 @@ export const keysArray = [
     key: '7',
     keyShift: '&',
     keyRu: '7',
-    keyRusShift: '?'
+    keyRusShift: '?',
   },
   {
     code: 'Digit8',
     keyCode: 56,
     key: '8',
     keyShift: '*',
-    key: '8',
-    keyRusShift: '*'
+    keyRu: '8',
+    keyRusShift: '*',
   },
   {
     code: 'Digit9',
@@ -77,7 +77,7 @@ export const keysArray = [
     key: '9',
     keyShift: '(',
     keyRu: '9',
-    keyRusShift: '('
+    keyRusShift: '(',
   },
   {
     code: 'Digit0',
@@ -85,7 +85,7 @@ export const keysArray = [
     key: '0',
     keyShift: ')',
     keyRu: '0',
-    keyRusShift: ')'
+    keyRusShift: ')',
   },
   {
     code: 'Minus',
@@ -93,27 +93,27 @@ export const keysArray = [
     key: '-',
     keyShift: '_',
     keyRu: '-',
-    keyRusShift: '_'
+    keyRusShift: '_',
   },
   {
     code: 'Equal',
     keyCode: 187,
     key: '=',
     keyShift: '+',
-    key: '=',
-    keyRusShift: '+'
+    keyRu: '=',
+    keyRusShift: '+',
   },
   {
     code: 'Backspace',
     keyCode: 8,
     key: 'Delete',
-    keyRu: 'Delete'
+    keyRu: 'Delete',
   },
   {
     code: 'Tab',
     keyCode: 9,
     key: 'Tab',
-    keyRu: 'Tab'
+    keyRu: 'Tab',
   },
   {
     code: 'KeyQ',
@@ -121,7 +121,7 @@ export const keysArray = [
     key: 'q',
     keyShift: 'Q',
     keyRu: 'й',
-    keyRusShift: 'Й'
+    keyRusShift: 'Й',
   },
   {
     code: 'KeyW',
@@ -129,7 +129,7 @@ export const keysArray = [
     key: 'w',
     keyShift: 'W',
     keyRu: 'ц',
-    keyRusShift: 'Ц'
+    keyRusShift: 'Ц',
   },
   {
     code: 'KeyE',
@@ -137,7 +137,7 @@ export const keysArray = [
     key: 'e',
     keyShift: 'E',
     keyRu: 'у',
-    keyRusShift: 'У'
+    keyRusShift: 'У',
   },
   {
     code: 'KeyR',
@@ -145,15 +145,15 @@ export const keysArray = [
     key: 'r',
     keyShift: 'R',
     keyRu: 'к',
-    keyRusShift: 'К'
+    keyRusShift: 'К',
   },
   {
     code: 'KeyT',
     keyCode: 84,
     key: 't',
     keyShift: 'T',
-    key: 'е',
-    keyRusShift: 'Е'
+    keyRu: 'е',
+    keyRusShift: 'Е',
   },
   {
     code: 'KeyY',
@@ -161,7 +161,7 @@ export const keysArray = [
     key: 'y',
     keyShift: 'Y',
     keyRu: 'н',
-    keyRusShift: 'Н'
+    keyRusShift: 'Н',
   },
   {
     code: 'KeyU',
@@ -169,7 +169,7 @@ export const keysArray = [
     key: 'u',
     keyShift: 'U',
     keyRu: 'г',
-    keyRusShift: 'Г'
+    keyRusShift: 'Г',
   },
   {
     code: 'KeyI',
@@ -177,7 +177,7 @@ export const keysArray = [
     key: 'i',
     keyShift: 'I',
     keyRu: 'ш',
-    keyRusShift: 'Ш'
+    keyRusShift: 'Ш',
   },
   {
     code: 'KeyO',
@@ -185,7 +185,7 @@ export const keysArray = [
     key: 'o',
     keyShift: 'O',
     keyRu: 'щ',
-    keyRusShift: 'Щ'
+    keyRusShift: 'Щ',
   },
   {
     code: 'KeyP',
@@ -193,7 +193,7 @@ export const keysArray = [
     key: 'p',
     keyShift: 'P',
     keyRu: 'з',
-    keyRusShift: 'З'
+    keyRusShift: 'З',
   },
   {
     code: 'BracketLeft',
@@ -201,7 +201,7 @@ export const keysArray = [
     key: '[',
     keyShift: '{',
     keyRu: 'х',
-    keyRusShift: 'Х'
+    keyRusShift: 'Х',
   },
   {
     code: 'BracketRight',
@@ -209,7 +209,7 @@ export const keysArray = [
     key: ']',
     keyShift: '}',
     keyRu: '(',
-    keyRusShift: ')'
+    keyRusShift: ')',
   },
   {
     code: 'Brackslash',
@@ -217,13 +217,13 @@ export const keysArray = [
     key: '\\',
     keyShift: '|',
     keyRu: '\\',
-    keyRusShift: '/'
+    keyRusShift: '/',
   },
   {
     code: 'CapsLock',
     keyCode: 20,
     key: 'CapsLock',
-    keyRu: 'CapsLock'
+    keyRu: 'CapsLock',
   },
   {
     code: 'KeyA',
@@ -231,7 +231,7 @@ export const keysArray = [
     key: 'a',
     keyShift: 'A',
     keyRu: 'ф',
-    keyRusShift: 'Ф'
+    keyRusShift: 'Ф',
   },
   {
     code: 'KeyS',
@@ -239,7 +239,7 @@ export const keysArray = [
     key: 's',
     keyShift: 'S',
     keyRu: 'ы',
-    keyRusShift: 'Ы'
+    keyRusShift: 'Ы',
   },
   {
     code: 'KeyD',
@@ -247,15 +247,15 @@ export const keysArray = [
     key: 'd',
     keyShift: 'D',
     keyRu: 'в',
-    keyRusShift: 'В'
+    keyRusShift: 'В',
   },
   {
     code: 'KeyF',
     keyCode: 70,
     key: 'f',
     keyShift: 'F',
-    key: 'а',
-    keyRusShift: 'А'
+    keyRu: 'а',
+    keyRusShift: 'А',
   },
   {
     code: 'KeyG',
@@ -263,7 +263,7 @@ export const keysArray = [
     key: 'g',
     keyShift: 'G',
     keyRu: 'п',
-    keyRusShift: 'П'
+    keyRusShift: 'П',
   },
   {
     code: 'KeyH',
@@ -271,7 +271,7 @@ export const keysArray = [
     key: 'h',
     keyShift: 'H',
     keyRu: 'р',
-    keyRusShift: 'Р'
+    keyRusShift: 'Р',
   },
   {
     code: 'KeyJ',
@@ -279,7 +279,7 @@ export const keysArray = [
     key: 'j',
     keyShift: 'J',
     keyRu: 'о',
-    keyRusShift: 'О'
+    keyRusShift: 'О',
   },
   {
     code: 'KeyK',
@@ -287,7 +287,7 @@ export const keysArray = [
     key: 'k',
     keyShift: 'K',
     keyRu: 'л',
-    keyRusShift: 'Л'
+    keyRusShift: 'Л',
   },
   {
     code: 'KeyL',
@@ -295,7 +295,7 @@ export const keysArray = [
     key: 'l',
     keyShift: 'L',
     keyRu: 'д',
-    keyRusShift: 'Д'
+    keyRusShift: 'Д',
   },
   {
     code: 'Semicolon',
@@ -303,7 +303,7 @@ export const keysArray = [
     key: ';',
     keyShift: ':',
     keyRu: 'ж',
-    keyRusShift: 'Ж'
+    keyRusShift: 'Ж',
   },
   {
     code: 'Quote',
@@ -311,19 +311,19 @@ export const keysArray = [
     key: "'",
     keyShift: '"',
     keyRu: 'э',
-    keyRusShift: 'Э'
+    keyRusShift: 'Э',
   },
   {
     code: 'Enter',
     keyCode: 13,
     key: 'Return',
-    keyRu: 'Return'
+    keyRu: 'Return',
   },
   {
     code: 'ShiftLeft',
     keyCode: 16,
     key: 'Shift',
-    keyRu: 'Shift'
+    keyRu: 'Shift',
   },
   {
     code: 'KeyZ',
@@ -331,7 +331,7 @@ export const keysArray = [
     key: 'z',
     keyShift: 'Z',
     keyRu: 'я',
-    keyRusShift: 'Я'
+    keyRusShift: 'Я',
   },
   {
     code: 'KeyX',
@@ -339,7 +339,7 @@ export const keysArray = [
     key: 'x',
     keyShift: 'X',
     keyRu: 'ч',
-    keyRusShift: 'Ч'
+    keyRusShift: 'Ч',
   },
   {
     code: 'KeyC',
@@ -347,7 +347,7 @@ export const keysArray = [
     key: 'c',
     keyShift: 'C',
     keyRu: 'с',
-    keyRusShift: 'С'
+    keyRusShift: 'С',
   },
   {
     code: 'KeyV',
@@ -355,7 +355,7 @@ export const keysArray = [
     key: 'v',
     keyShift: 'V',
     keyRu: 'м',
-    keyRusShift: 'М'
+    keyRusShift: 'М',
   },
   {
     code: 'KeyB',
@@ -363,7 +363,7 @@ export const keysArray = [
     key: 'b',
     keyShift: 'B',
     keyRu: 'и',
-    keyRusShift: 'И'
+    keyRusShift: 'И',
   },
   {
     code: 'KeyN',
@@ -371,7 +371,7 @@ export const keysArray = [
     key: 'n',
     keyShift: 'N',
     keyRu: 'т',
-    keyRusShift: 'Т'
+    keyRusShift: 'Т',
   },
   {
     code: 'KeyM',
@@ -379,7 +379,7 @@ export const keysArray = [
     key: 'm',
     keyShift: 'M',
     keyRu: 'ь',
-    keyRusShift: 'Ь'
+    keyRusShift: 'Ь',
   },
   {
     code: 'Comma',
@@ -387,7 +387,7 @@ export const keysArray = [
     key: ',',
     keyShift: '<',
     keyRu: 'б',
-    keyRusShift: 'Б'
+    keyRusShift: 'Б',
   },
   {
     code: 'Period',
@@ -395,7 +395,7 @@ export const keysArray = [
     key: '.',
     keyShift: '>',
     keyRu: 'ю',
-    keyRusShift: 'Ю'
+    keyRusShift: 'Ю',
   },
   {
     code: 'Slash',
@@ -403,433 +403,74 @@ export const keysArray = [
     key: '/',
     keyShift: '?',
     keyRu: '.',
-    keyRusShift: ','
+    keyRusShift: ',',
   },
   {
     code: 'ArrowUp',
     keyCode: 38,
     key: '▲',
-    keyRu: '▲'
+    keyRu: '▲',
   },
   {
     code: 'ShiftRight',
     keyCode: 16,
     key: 'Shift',
-    keyRu: 'Shift'
+    keyRu: 'Shift',
   },
   {
     code: 'ControlLeft',
     keyCode: 17,
     key: 'Control',
-    keyRu: 'Control'
+    keyRu: 'Control',
   },
   {
     code: 'AltLeft',
     keyCode: 18,
     key: 'Option',
-    keyRu: 'Option'
+    keyRu: 'Option',
   },
   {
     code: 'MetaLeft',
     keyCode: 91,
     key: 'Command',
-    keyRu: 'Command'
+    keyRu: 'Command',
   },
   {
     code: 'Space',
     keyCode: 32,
     key: ' ',
-    keyRu: ' '
+    keyRu: ' ',
   },
   {
     code: 'MetaRight',
     keyCode: 93,
     key: 'Command',
-    keyRu: 'Command'
+    keyRu: 'Command',
   },
   {
     code: 'AltRight',
     keyCode: 18,
     key: 'Option',
-    keyRu: 'Option'
+    keyRu: 'Option',
   },
   {
     code: 'ArrowLeft',
     keyCode: 37,
     key: '◀︎',
-    keyRu: '◀︎'
+    keyRu: '◀︎',
   },
   {
     code: 'ArrowDown',
     keyCode: 40,
     key: '▼',
-    keyRu: '▼'
+    keyRu: '▼',
   },
   {
     code: 'ArrowRight',
     keyCode: 39,
     key: '►',
-    keyRu: '►'
-  }
-]
+    keyRu: '►',
+  },
+];
 
-// export const keysArrayRu = [
-//   {
-//     code: 'Backquote',
-//     keyCode: 192,
-//     keyRu: 'ё',
-//     keyRuShift: 'Ë'
-//   },
-//   {
-//     code: 'Digit1',
-//     keyCode: 49,
-//     key: '1',
-//     keyShift: '!'
-//   },
-//   {
-//     code: 'Digit2',
-//     keyCode: 50,
-//     key: '2',
-//     keyRusShift: '"'
-//   },
-//   {
-//     code: 'Digit3',
-//     keyCode: 51,
-//     key: '3',
-//     keyRusShift: '№'
-//   },
-//   {
-//     code: 'Digit4',
-//     keyCode: 52,
-//     key: '4',
-//     keyRusShift: ';'
-//   },
-//   {
-//     code: 'Digit5',
-//     keyCode: 53,
-//     key: '5',
-//     keyRusShift: '%'
-//   },
-//   {
-//     code: 'Digit6',
-//     keyCode: 54,
-//     key: '6',
-//     keyRusShift: ':'
-//   },
-//   {
-//     code: 'Digit7',
-//     keyCode: 55,
-//     key: '7',
-//     keyRusShift: '?'
-//   },
-//   {
-//     code: 'Digit8',
-//     keyCode: 56,
-//     key: '8',
-//     keyRusShift: '*'
-//   },
-//   {
-//     code: 'Digit9',
-//     keyCode: 57,
-//     key: '9',
-//     keyRusShift: '('
-//   },
-//   {
-//     code: 'Digit0',
-//     keyCode: 48,
-//     key: '0',
-//     keyRusShift: ')'
-//   },
-//   {
-//     code: 'Minus',
-//     keyCode: 189,
-//     key: '-',
-//     keyRusShift: '_'
-//   },
-//   {
-//     code: 'Equal',
-//     keyCode: 187,
-//     key: '=',
-//     keyRusShift: '+'
-//   },
-//   {
-//     code: 'Backspace',
-//     keyCode: 8,
-//     key: 'Delete'
-//   },
-//   { code: 'Tab', keyCode: 9, key: 'Tab' },
-//   {
-//     code: 'KeyQ',
-//     keyCode: 81,
-//     key: 'й',
-//     keyRusShift: 'Й'
-//   },
-//   {
-//     code: 'KeyW',
-//     keyCode: 87,
-//     key: 'ц',
-//     keyRusShift: 'Ц'
-//   },
-//   {
-//     code: 'KeyE',
-//     keyCode: 69,
-//     key: 'у',
-//     keyRusShift: 'У'
-//   },
-//   {
-//     code: 'KeyR',
-//     keyCode: 82,
-//     key: 'к',
-//     keyRusShift: 'К'
-//   },
-//   {
-//     code: 'KeyT',
-//     keyCode: 84,
-//     key: 'е',
-//     keyRusShift: 'Е'
-//   },
-//   {
-//     code: 'KeyY',
-//     keyCode: 89,
-//     key: 'н',
-//     keyRusShift: 'Н'
-//   },
-//   {
-//     code: 'KeyU',
-//     keyCode: 85,
-//     key: 'г',
-//     keyRusShift: 'Г'
-//   },
-//   {
-//     code: 'KeyI',
-//     keyCode: 73,
-//     key: 'ш',
-//     keyRusShift: 'Ш'
-//   },
-//   {
-//     code: 'KeyO',
-//     keyCode: 79,
-//     key: 'щ',
-//     keyRusShift: 'Щ'
-//   },
-//   {
-//     code: 'KeyP',
-//     keyCode: 80,
-//     key: 'з',
-//     keyRusShift: 'З'
-//   },
-//   {
-//     code: 'BracketLeft',
-//     keyCode: 219,
-//     key: 'х',
-//     keyRusShift: 'Х'
-//   },
-//   {
-//     code: 'BracketRight',
-//     keyCode: 221,
-//     key: 'ъ',
-//     keyRusShift: 'Ъ'
-//   },
-//   {
-//     code: 'Brackslash',
-//     keyCode: 220,
-//     key: '\\',
-//     keyRusShift: '/'
-//   },
-//   {
-//     code: 'CapsLock',
-//     keyCode: 20,
-//     key: 'CapsLock'
-//   },
-//   {
-//     code: 'KeyA',
-//     keyCode: 65,
-//     key: 'ф',
-//     keyRusShift: 'Ф'
-//   },
-//   {
-//     code: 'KeyS',
-//     keyCode: 83,
-//     key: 'ы',
-//     keyRusShift: 'Ы'
-//   },
-//   {
-//     code: 'KeyD',
-//     keyCode: 68,
-//     key: 'в',
-//     keyRusShift: 'В'
-//   },
-//   {
-//     code: 'KeyF',
-//     keyCode: 70,
-//     key: 'а',
-//     keyRusShift: 'А'
-//   },
-//   {
-//     code: 'KeyG',
-//     keyCode: 71,
-//     key: 'п',
-//     keyRusShift: 'П'
-//   },
-//   {
-//     code: 'KeyH',
-//     keyCode: 72,
-//     key: 'р',
-//     keyRusShift: 'Р'
-//   },
-//   {
-//     code: 'KeyJ',
-//     keyCode: 74,
-//     key: 'о',
-//     keyRusShift: 'О'
-//   },
-//   {
-//     code: 'KeyK',
-//     keyCode: 75,
-//     key: 'л',
-//     keyRusShift: 'Л'
-//   },
-//   {
-//     code: 'KeyL',
-//     keyCode: 76,
-//     key: 'д',
-//     keyRusShift: 'Д'
-//   },
-//   {
-//     code: 'Semicolon',
-//     keyCode: 186,
-//     key: 'ж',
-//     keyRusShift: 'Ж'
-//   },
-//   {
-//     code: 'Quote',
-//     keyCode: 222,
-//     key: 'э',
-//     keyRusShift: 'Э'
-//   },
-//   {
-//     code: 'Enter',
-//     keyCode: 13,
-//     key: 'Return'
-//   },
-//   {
-//     code: 'ShiftLeft',
-//     keyCode: 16,
-//     key: 'Shift'
-//   },
-//   {
-//     code: 'KeyZ',
-//     keyCode: 90,
-//     key: 'я',
-//     keyRusShift: 'Я'
-//   },
-//   {
-//     code: 'KeyX',
-//     keyCode: 88,
-//     key: 'ч',
-//     keyRusShift: 'Ч'
-//   },
-//   {
-//     code: 'KeyC',
-//     keyCode: 67,
-//     key: 'с',
-//     keyRusShift: 'С'
-//   },
-//   {
-//     code: 'KeyV',
-//     keyCode: 86,
-//     key: 'м',
-//     keyRusShift: 'М'
-//   },
-//   {
-//     code: 'KeyB',
-//     keyCode: 66,
-//     key: 'и',
-//     keyRusShift: 'И'
-//   },
-//   {
-//     code: 'KeyN',
-//     keyCode: 78,
-//     key: 'т',
-//     keyRusShift: 'Т'
-//   },
-//   {
-//     code: 'KeyM',
-//     keyCode: 77,
-//     key: 'ь',
-//     keyRusShift: 'Ь'
-//   },
-//   {
-//     code: 'Comma',
-//     keyCode: 188,
-//     key: 'б',
-//     keyRusShift: 'Б'
-//   },
-//   {
-//     code: 'Period',
-//     keyCode: 190,
-//     key: 'ю',
-//     keyRusShift: 'Ю'
-//   },
-//   {
-//     code: 'Slash',
-//     keyCode: 191,
-//     key: '.',
-//     keyRusShift: ','
-//   },
-//   {
-//     code: 'ArrowUp',
-//     keyCode: 38,
-//     key: '▲'
-//   },
-//   {
-//     code: 'ShiftRight',
-//     keyCode: 16,
-//     key: 'Shift'
-//   },
-//   {
-//     code: 'ControlLeft',
-//     keyCode: 17,
-//     key: 'Control'
-//   },
-//   {
-//     code: 'AltLeft',
-//     keyCode: 18,
-//     key: 'Option'
-//   },
-//   {
-//     code: 'MetaLeft',
-//     keyCode: 91,
-//     key: 'Command'
-//   },
-//   {
-//     code: 'Space',
-//     keyCode: 32,
-//     key: ' '
-//   },
-//   {
-//     code: 'MetaRight',
-//     keyCode: 93,
-//     key: 'Command'
-//   },
-//   {
-//     code: 'AltRight',
-//     keyCode: 18,
-//     key: 'Option'
-//   },
-//   {
-//     code: 'ArrowLeft',
-//     keyCode: 37,
-//     key: '◀︎'
-//   },
-//   {
-//     code: 'ArrowDown',
-//     keyCode: 40,
-//     key: '▼'
-//   },
-//   {
-//     code: 'ArrowRight',
-//     keyCode: 39,
-//     key: '►'
-//   }
-// ]
+export default keysArray;
