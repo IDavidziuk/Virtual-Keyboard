@@ -1,0 +1,150 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  background-color: #f3f3f3;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 400;
+}
+
+.wrapper {
+  max-width: 1280px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+textarea {
+  width: 500px;
+  height: 150px;
+  border: 1px solid rgb(1, 49, 40);
+  color: rgb(4, 11, 10);
+}
+
+textarea:focus {
+  border: 1px solid rgb(8, 148, 122);
+  outline: none;
+  box-shadow: 2px 2px 4px rgba(86, 86, 86, 0.5);
+}
+
+.text-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  margin-top: 30px;
+  margin-bottom: 0;
+  font-size: 30px;
+}
+
+h2 {
+  margin: 20px;
+  font-size: 20px;
+  font-weight: 200;
+}
+
+.keyboard {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 40px;
+  margin-bottom: 60px;
+  padding: 30px 40px;
+  background: #e5eae9;
+  width: 900px;
+  border-radius: 20px;
+  box-shadow: 8px 5px 15px rgba(138, 138, 138, 0.4);
+}
+.key-button {
+  font-weight: 600;
+  font-size: 11px;
+  outline: none;
+  border: none;
+  background-color: #3b5550;
+  color: #ffffff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  position: relative;
+  min-width: 60px;
+  height: 50px;
+  padding: 0;
+  text-align: center;
+  vertical-align: top;
+  box-shadow: 0px 2px 5px #4f4f4f;
+  transition: all 0.4s ease-out;
+}
+
+.key-button:hover {
+  background-color: #1f3528;
+}
+
+.key-button.active {
+  background-color: #1f3528;
+}
+
+.key-button.arrow {
+  min-width: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.key-button.switch {
+  font-size: 14px;
+  font-weight: 400;
+  min-width: 50px;
+}
+
+.key-button.space {
+  min-width: 250px;
+}
+.key-button.control {
+  min-width: 70px;
+}
+.key-button.shift {
+  min-width: 52px;
+  align-items: center;
+}
+/* .switch-el {
+  position: absolute;
+  top: 6px;
+  left: 10px;
+} */
+
+#shiftleft {
+  width: 118px;
+}
+
+.key-button.capslock {
+  width: 90px;
+}
+
+.capslock::after {
+  content: '';
+  top: 8px;
+  left: 8px;
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  background: #e5eae9;
+  border-radius: 50%;
+}
+.capslock.active::after {
+  background: #80ffe6;
+}
+.key-button.command {
+  width: 81px;
+}
+
+.key-button.return {
+  width: 80px;
+}
