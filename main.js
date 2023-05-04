@@ -958,7 +958,7 @@ module.exports = styleTagTransform;
   \**********************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-module.exports = __webpack_require__.p + "5e9a6b6d3c7571f4f8fa.js";
+module.exports = __webpack_require__.p + "5d6db08d7fed7b672be5.js";
 
 /***/ }),
 
@@ -1183,10 +1183,10 @@ const changeLang = function () {
   });
 };
 function onKeyDownHandler(event) {
-  if (event.code !== 'CapsLock') {
-    document.querySelector(`[data-code = ${event.code}]`).add('active');
-  } else {
-    document.querySelector(`[data-code = ${event.code}]`).classList.toggle('active');
+  document.querySelector(`[data-code = ${event.code}]`).classList.toggle('active');
+  if (event.code === 'Backspace') {
+    textarea.value = textarea.value.substring(0, textarea.selectionStart - 1) + textarea.value.substring(textarea.selectionStart);
+    textarea.selectionEnd = textarea.selectionStart + 1;
   }
   if (event.code === 'CapsLock') {
     const letters = document.querySelectorAll('.switch');
@@ -1213,6 +1213,22 @@ function onKeyDownHandler(event) {
       localStorage.setItem('lang', 'ru');
     }
     changeLang(langEng);
+  }
+  if (event.code === 'Tab') {
+    textarea.value += '    ';
+  }
+  if (event.code === 'Enter') {
+    textarea.value += '\n';
+  }
+  if (event.code === 'Space') {
+    textarea.value += ' ';
+  }
+  if (event.code === 'ArrowLeft') {
+    textarea.selectionStart -= 1;
+    textarea.selectionEnd -= 1;
+  }
+  if (event.code === 'ArrowRight') {
+    textarea.selectionStart += 1;
   }
 }
 function onKeyUpHandler(event) {
@@ -1241,12 +1257,16 @@ if (localStorage.getItem('lang') === 'ru') {
 }
 function specialButton(event) {
   textarea.focus();
+  const cursorStart = textarea.selectionStart;
+  const cursorEnd = textarea.selectionEnd;
   if (event.target === document.querySelector('[data-code= Tab]')) {
     textarea.value += '    ';
   }
   if (event.target === document.querySelector('[data-code = Backspace]')) {
-    textarea.value = textarea.value.substring(0, textarea.selectionStart - 1) + textarea.value.substring(textarea.selectionStart);
-    textarea.selectionEnd = textarea.selectionStart + 1;
+    if (cursorStart === cursorEnd) {
+      textarea.value = textarea.value.slice(0, textarea.selectionStart) + textarea.value.slice(textarea.selectionStart + 1);
+      textarea.setSelectionRange(cursorStart, cursorStart);
+    }
   }
   if (event.target === document.querySelector('[data-code = Enter]')) {
     textarea.value += '\n';
