@@ -1,33 +1,44 @@
 import './index.html'
 import './style.css'
-import { keysArrayEng, keysArrayRu } from './keyboard-content'
+import { keysArray } from './keyboard-content'
 
 const body = document.querySelector('body')
 
 let keyItem = ''
+let langEng = true
 //создание клавиатуры
 function createKeyboard(array) {
+  keyItem = ''
   const keyElement = document.createElement('button')
   keyElement.classList.add('key-button')
   keyElement.setAttribute('type', 'button')
 
   array.forEach(function (el) {
-    let keys = Object.values(el)
-    if (keys.length === 4) {
-      keyItem += `<button class="key-button switch" data = ${keys[1]} data-code = ${keys[0]}>${keys[2]} </button>`
+    if (el.keyRusShift) {
+      keyItem += `<button class="key-button switch" data = ${
+        el.keyCode
+      } data-code = ${el.code}  id = ${el.code.toLowerCase()}>${
+        el.key
+      } </button>`
     } else if (
-      keys[0] === 'ArrowDown' ||
-      keys[0] === 'ArrowRight' ||
-      keys[0] === 'ArrowUp' ||
-      keys[0] === 'ArrowLeft'
+      el.code === 'ArrowDown' ||
+      el.code === 'ArrowRight' ||
+      el.code === 'ArrowUp' ||
+      el.code === 'ArrowLeft'
     ) {
-      keyItem += `<button class="key-button arrow" data = ${keys[1]} data-code = ${keys[0]}>${keys[2]} </button>`
-    } else if (keys[0] === 'Space') {
-      keyItem += `<button class="key-button space" data = ${keys[1]} data-code = ${keys[0]}>${keys[2]}</button>`
+      keyItem += `<button class="key-button arrow" data = ${
+        el.keyCode
+      } data-code = ${el.code} id = ${el.code.toLowerCase()}>${
+        el.key
+      } </button>`
+    } else if (el.code === 'Space') {
+      keyItem += `<button class="key-button space" data = ${
+        el.keyCode
+      } data-code = ${el.code} id = ${el.code.toLowerCase()}>${el.key}</button>`
     } else {
-      keyItem += `<button class="key-button  ${keys[2].toLowerCase()}" data = ${
-        keys[1]
-      } data-code = ${keys[0]} id = ${keys[0].toLowerCase()}>${keys[2]}
+      keyItem += `<button class="key-button  ${el.key.toLowerCase()}" data = ${
+        el.keyCode
+      } data-code = ${el.code} id = ${el.code.toLowerCase()}>${el.key}
       </button>`
     }
   })
@@ -58,26 +69,11 @@ function createTextareaAndAddition() {
   textContent.append(nameOfOS, addInf)
   body.append(wrapper)
 }
+
 createTextareaAndAddition()
-
-if (!localStorage.getItem('lang')) {
-  localStorage.setItem('lang', 'en')
-}
-const langCurr = localStorage.getItem('lang')
-if (langCurr === 'en') {
-  createKeyboard(keysArrayEng)
-} else {
-  createKeyboard(keysArrayRu)
-}
-
-// let keys
-
-// arr.forEach(function (el) {
-//   keys = Object.values(el)
-// })
+createKeyboard(keysArray)
 
 const textarea = document.querySelector('.textarea')
-const keyButton = document.querySelectorAll('.key-button')
 
 function onKeyDownHandler(event) {
   document.querySelector(`[data-code = ${event.code}]`).classList.add('active')
@@ -92,23 +88,19 @@ document.addEventListener('keydown', onKeyDownHandler)
 document.addEventListener('keyup', onKeyUpHandler)
 
 function onKeyDownMouseHandler(event) {
-  if (
-    event.currentTarget !== document.querySelector('[data-code = CapsLock]')
-  ) {
-    event.currentTarget.classList.add('active')
+  if (event.target !== document.querySelector('[data-code = CapsLock]')) {
+    event.target.classList.add('active')
   } else {
-    event.currentTarget.classList.toggle('active')
+    event.target.classList.toggle('active')
   }
 }
 
-function onKeyUpMouseHandler(event, keys) {
-  if (
-    event.currentTarget !== document.querySelector('[data-code = CapsLock]')
-  ) {
-    event.currentTarget.classList.remove('active')
+function onKeyUpMouseHandler(event) {
+  if (event.target !== document.querySelector('[data-code = CapsLock]')) {
+    event.target.classList.remove('active')
   }
 }
-
+const keyButton = document.querySelectorAll('.key-button')
 keyButton.forEach((element) =>
   element.addEventListener('mousedown', onKeyDownMouseHandler)
 )
@@ -116,40 +108,49 @@ keyButton.forEach((element) =>
   element.addEventListener('mouseup', onKeyUpMouseHandler)
 )
 
+const changeLang = (en = true) => {
+  let ruKey
+  keyButton.forEach((elem) => {
+    ruKey = keysArray.find((item) => item.code.toLowerCase() === elem.id)
+    console.log(ruKey)
+    if (ruKey.keyRu) {
+      en ? (elem.innerHTML = ruKey.key) : (elem.innerHTML = ruKey.keyRu)
+    }
+  })
+}
+
+if (localStorage.getItem('lang') === 'ru') {
+  langEng = false
+  changeLang(langEng)
+}
+
 function specialButton(event) {
   textarea.focus()
 
-  if (event.currentTarget === document.querySelector('[data-code= Tab]')) {
+  if (event.target === document.querySelector('[data-code= Tab]')) {
     textarea.value += '    '
   }
-  if (
-    event.currentTarget === document.querySelector('[data-code = Backspace]')
-  ) {
+  if (event.target === document.querySelector('[data-code = Backspace]')) {
     textarea.value =
-      textarea.value.slice(0, textarea.selectionStart - 1) +
-      textarea.value.slice(textarea.selectionStart)
-    textarea.selectionEnd = textarea.selectionStart - 1
+      textarea.value.substring(0, textarea.selectionStart - 1) +
+      textarea.value.substring(textarea.selectionStart)
+    textarea.selectionEnd = textarea.selectionStart + 1
   }
-  if (event.currentTarget === document.querySelector('[data-code = Enter]')) {
+  if (event.target === document.querySelector('[data-code = Enter]')) {
     textarea.value += '\n'
   }
-  if (event.currentTarget === document.querySelector('[data-code = Space]')) {
+  if (event.target === document.querySelector('[data-code = Space]')) {
     textarea.value += ' '
   }
-  if (
-    event.currentTarget === document.querySelector('[data-code = ArrowLeft]')
-  ) {
+  if (event.target === document.querySelector('[data-code = ArrowLeft]')) {
     textarea.selectionStart = textarea.selectionStart - 1
     textarea.selectionEnd = textarea.selectionEnd - 1
   }
-  if (
-    event.currentTarget === document.querySelector('[data-code = ArrowRight]')
-  ) {
+  if (event.target === document.querySelector('[data-code = ArrowRight]')) {
     textarea.selectionStart = textarea.selectionStart + 1
   }
-  if (
-    event.currentTarget === document.querySelector('[data-code = CapsLock]')
-  ) {
+
+  if (event.target === document.querySelector('[data-code = CapsLock]')) {
     const letters = document.querySelectorAll('.switch')
     letters.forEach((elem) => {
       document
@@ -160,24 +161,23 @@ function specialButton(event) {
     })
   }
   if (
-    event.currentTarget === document.querySelector('[data-code = MetaLeft]') ||
-    event.currentTarget === document.querySelector('[data-code = MetaRight]')
+    event.target.classList.contains('switch') ||
+    event.target === document.querySelector('[data-code = ArrowUp]') ||
+    event.target === document.querySelector('[data-code = ArrowDown]')
   ) {
-    if (localStorage.getItem('lang') === 'en') {
-      localStorage.setItem('lang', 'ru')
-    }
-  } else {
-    localStorage.setItem('lang', 'en')
-  }
-
-  if (event.target.classList.contains('switch')) {
     keyItem = event.target.innerText
     textarea.value += keyItem
+  }
+  if (event.target === document.querySelector('[data-code = MetaLeft]')) {
+    langEng = !langEng
+    langEng
+      ? localStorage.setItem('lang', 'en')
+      : localStorage.setItem('lang', 'ru')
+    changeLang(langEng)
   }
 }
 
 keyButton.forEach((element) => element.addEventListener('click', specialButton))
 // keyButton.forEach((element) => element.addEventListener('keydown', specialButton))
-// alert(
-//   'Привет. я не доконца еще доделала работу, буду благодарна, если посмотришь в четверг! Заранее спасибо!'
-// )
+// alert
+// ('Привет. я не доконца еще доделала работу, буду благодарна, если посмотришь в четверг! Заранее спасибо!')

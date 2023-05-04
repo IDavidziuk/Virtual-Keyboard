@@ -145,18 +145,6 @@ h2 {
   width: 81px;
 }
 
-/* .key-button.command,
-.key-button.option,
-.key-button.Control {
-  align-items: flex-end;
-  padding-bottom: 15px;
-} */
 .key-button.return {
   width: 80px;
 }
-
-/* .add-el {
-  position: absolute;
-  top: 5px;
-  right: 10px;
-} */
